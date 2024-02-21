@@ -73,12 +73,17 @@ img {
 /* Header */
 header {
     background-color: var(--red);
-    box-shadow: var(--box-shadow);
     padding: 15px;
     position: fixed;
     width: 100%;
     top: 0;
     height: 75px;
+
+    transition: box-shadow 700ms ease;
+}
+
+.box-shadow {
+    box-shadow: var(--box-shadow);
 }
 
 .header-content {
