@@ -59,7 +59,6 @@ p,
 
 .phone-number {
     font-size: 64px;
-    color: black;
 
     display: flex;
     align-items: center;
@@ -73,6 +72,10 @@ img {
 
 .mobile-only {
     display: none;
+}
+
+.color-black {
+    color: black;
 }
 
 /* Header */
