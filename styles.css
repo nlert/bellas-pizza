@@ -78,6 +78,7 @@ header {
     width: 100%;
     top: 0;
     height: 75px;
+    z-index: 9999;
 
     transition: box-shadow 700ms ease;
 }
@@ -244,4 +245,55 @@ footer {
     
     display: grid;
     place-items: center;
+}
+
+
+/* Fade in animation */
+.fade-in {
+    transform: translateY(30px);
+    opacity: 0;
+    filter: blur(2px);
+    transition: 500ms ease-out;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+}
+
+.fade-in:nth-child(2) {
+    transition-delay: 100ms;
+}
+
+.fade-in:nth-child(3) {
+    transition-delay: 200ms;
+}
+
+.fade-in:nth-child(4) {
+    transition-delay: 300ms;
+}
+
+.fade-in:nth-child(5) {
+    transition-delay: 400ms;
+}
+
+.fade-in:nth-child(6) {
+    transition-delay: 500ms;
+}
+
+@media (prefers-reduced-motion) {
+    header, .fade-in {
+        transition: none;
+    }
+
+    header {
+        box-shadow: var(--box-shadow);
+    }
+
+    .fade-in {
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+    }
 }
