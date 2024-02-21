@@ -59,6 +59,7 @@ p,
 
 .phone-number {
     font-size: 64px;
+    color: black;
 
     display: flex;
     align-items: center;
@@ -307,5 +308,14 @@ footer {
         opacity: 1;
         transform: translateY(0);
         filter: blur(0);
+    }
+}
+
+@media (max-width: 970px) {
+    .fade-in {
+        transform: translateY(0);
+        opacity: 1;
+        filter: blur(0);
+        transition: none;
     }
 }
