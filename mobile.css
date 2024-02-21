@@ -20,11 +20,47 @@
         font-size: 48px;
     }
 
-    /* Hero */
-    .hero {
-        padding-top: 75px; /* Check */
+    .mobile-only {
+        display: block;
     }
 
+    /* Header */
+    header {
+        position: static;
+        height: 150px;
+        transition: none;
+
+        display: grid;
+        place-items: center;
+    }
+    
+    .box-shadow {
+        box-shadow: none;
+    }
+    
+    .header-content {
+        margin: 0;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .divider {
+        height: 1px;
+        width: 100%;
+        background-color: white;
+    }
+
+    .links {
+        width: 100%;
+        justify-content: space-evenly;
+        gap: 0;
+    }
+
+    /* Hero */
     .hero-content {
         grid-template-columns: 1fr;
         grid-template-rows: max-content calc(var(--hero-image-width) / 2);

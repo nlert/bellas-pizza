@@ -70,6 +70,10 @@ img {
     object-fit: cover;
 }
 
+.mobile-only {
+    display: none;
+}
+
 /* Header */
 header {
     background-color: var(--red);
@@ -94,6 +98,11 @@ header {
     margin: auto;
 }
 
+.links {
+    display: flex;
+    gap: 25px;
+}
+
 .nav-link {
     font-size: 20px;
 }
@@ -109,11 +118,6 @@ header {
 
 .logo {
     width: max-content;
-}
-
-.links {
-    display: flex;
-    gap: 25px;
 }
 
 a {
