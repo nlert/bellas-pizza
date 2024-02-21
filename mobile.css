@@ -1,0 +1,48 @@
+@media (max-width: 970px) {
+    .width {
+        width: 400px;
+    }
+
+    h2 {
+        font-size: 48px;
+    }
+    
+    h3 {
+        font-size: 14px;
+    }
+    
+    p,
+    .standard {
+        font-size: 20px;
+    }
+    
+    .phone-number {
+        font-size: 48px;
+    }
+
+    /* Hero */
+    .hero {
+        padding-top: 75px; /* Check */
+    }
+
+    .hero-content {
+        grid-template-columns: 1fr;
+        grid-template-rows: max-content calc(var(--hero-image-width) / 2);
+        justify-items: center;
+    }
+
+    .hero-image {
+        width: 90%;
+        max-width: 400px;
+        aspect-ratio: 2;
+        grid-row: 2 / 3;
+    }
+
+    .order-now {
+        margin-bottom: 0;
+    }
+    
+    .fa-phone {
+        font-size: 36px;
+    }
+}
