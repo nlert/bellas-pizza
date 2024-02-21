@@ -29,6 +29,13 @@ body {
     overflow-x: hidden;
 }
 
+h1 {
+    font-family: "Alex Brush", cursive;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 0.6;
+}
+
 h2 {
     font-family: "Alex Brush", cursive;
     font-weight: 400;
@@ -79,6 +86,10 @@ header {
     align-items: center;
     justify-content: space-between;
     margin: auto;
+}
+
+.nav-link {
+    font-size: 20px;
 }
 
 .sub-text {
