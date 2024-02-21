@@ -71,7 +71,7 @@ header {
     position: fixed;
     width: 100%;
     top: 0;
-    height: 105px;
+    height: 75px;
 }
 
 .header-content {
@@ -84,6 +84,9 @@ header {
 .sub-text {
     font-weight: 400;
     font-size: 14px;
+}
+
+.mar-left {
     margin-left: 30px;
 }
 
@@ -187,7 +190,7 @@ a {
 
 /* Contact */
 .contact {
-    padding: 50px 0;
+    padding: 125px 0;
 }
 
 .contact-info-wrapper {
@@ -200,6 +203,29 @@ a {
     text-align: center;
 }
 
+.socials {
+    display: flex;
+    gap: 5px;
+}
+
 .social-link {
     color: black;
+}
+
+.fa-arrow-up-right-from-square {
+    font-size: 12px;
+    margin-left: 3px;
+}
+
+.directions {
+    color: var(--red);
+}
+
+/* Footer */
+footer {
+    background-color: var(--red);
+    height: 75px;
+    
+    display: grid;
+    place-items: center;
 }
