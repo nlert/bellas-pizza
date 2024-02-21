@@ -124,7 +124,7 @@ a {
 .hero {
     min-height: max-content;
     height: 100vh;
-    padding-top: 105px;
+    padding-top: 75px;
 
     display: grid;
     place-items: center;
@@ -280,6 +280,14 @@ footer {
 
 .fade-in:nth-child(6) {
     transition-delay: 500ms;
+}
+
+.fade-in:nth-child(7) {
+    transition-delay: 600ms;
+}
+
+.fade-in:nth-child(8) {
+    transition-delay: 700ms;
 }
 
 @media (prefers-reduced-motion) {
