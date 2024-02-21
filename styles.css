@@ -76,6 +76,8 @@ img {
 
 .color-black {
     color: black;
+    -webkit-text-decoration-color: black;
+    text-decoration-color: black;
 }
 
 /* Header */
