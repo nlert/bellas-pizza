@@ -74,6 +74,10 @@ img {
     display: none;
 }
 
+.color-black {
+    color: black;
+}
+
 /* Header */
 header {
     background-color: var(--red);
@@ -307,5 +311,14 @@ footer {
         opacity: 1;
         transform: translateY(0);
         filter: blur(0);
+    }
+}
+
+@media (max-width: 970px) {
+    .fade-in {
+        transform: translateY(0);
+        opacity: 1;
+        filter: blur(0);
+        transition: none;
     }
 }
