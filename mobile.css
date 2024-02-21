@@ -4,7 +4,7 @@
     }
 
     h2 {
-        font-size: 48px;
+        font-size: 56px;
     }
     
     h3 {
@@ -61,16 +61,21 @@
     }
 
     /* Hero */
+    .hero {
+        padding-top: 150px;
+        margin-top: -150px;
+    }
+
     .hero-content {
         grid-template-columns: 1fr;
-        grid-template-rows: max-content calc(var(--hero-image-width) / 2);
+        grid-template-rows: max-content max-content;
         justify-items: center;
     }
 
     .hero-image {
         width: 90%;
         max-width: 400px;
-        aspect-ratio: 2;
+        aspect-ratio: 1.5;
         grid-row: 2 / 3;
     }
 
