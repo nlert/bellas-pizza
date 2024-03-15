@@ -126,9 +126,9 @@ a {
 
 /* Hero */
 .hero {
-    min-height: max-content;
-    height: 100vh;
-    padding-top: 75px;
+    min-height: 100vh;
+    padding-top: calc(25px + 75);
+    padding-bottom: 25px;
 
     display: grid;
     place-items: center;
