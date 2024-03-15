@@ -196,6 +196,11 @@ a {
     align-items: center;
 }
 
+.color-black a {
+    color: inherit;
+    text-decoration: none;
+}
+
 .fa-phone {
     font-size: 40px;
 }
