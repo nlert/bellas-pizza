@@ -13,6 +13,7 @@
     --red: #cc0808;
     --red-linear-gradient: linear-gradient(135deg, #740606 0%, #c40808 100%);
     --box-shadow: 0 8px 10px 5px rgba(0, 0, 0, 0.25);
+    --background-white: #e9ecef;
 }
 
 .width {
@@ -25,7 +26,7 @@
 }
 
 body {
-    background-color: #e9ecef;
+    background-color: var(--background-white);
     overflow-x: hidden;
 }
 
@@ -55,13 +56,6 @@ p,
 
 .light {
     font-weight: 400;
-}
-
-.phone-number {
-    font-size: 64px;
-
-    display: flex;
-    align-items: center;
 }
 
 img {
@@ -156,12 +150,54 @@ a {
 }
 
 .order-now {
-    margin-top: 15px;
-    margin-bottom: -10px;
+    margin-top: 30px;
+    margin-bottom: -5px;
+}
+
+.or {
+    margin-bottom: 5px;
+}
+
+.order-online {
+    --order-button-height: 60px;
+
+    width: 300px;
+    height: var(--order-button-height);
+
+    border-radius: calc(var(--order-button-height) / 2);
+    background-color: black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.order-online:hover {
+    background-color: #343a40;
+}
+
+.order-online a {
+    width: 100%;
+    height: 100%;
+    
+    font-size: 20px;
+    color: white;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone-number {
+    font-size: 56px;
+
+    display: flex;
+    align-items: center;
 }
 
 .fa-phone {
-    font-size: 48px;
+    font-size: 40px;
 }
 
 /* About */
@@ -263,7 +299,7 @@ footer {
     transform: translateY(30px);
     opacity: 0;
     filter: blur(2px);
-    transition: 500ms ease-out;
+    transition: opacity 500ms ease-out, transform 500ms ease-out, filter 500ms ease-out;
 }
 
 .show {
