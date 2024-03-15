@@ -217,6 +217,7 @@ a {
 .about-grid {
     display: grid;
     grid-template-columns: 1fr var(--about-image-width);
+    grid-template-rows: max-content 1fr;
     gap: 25px;
     align-items: center;
 }
@@ -232,13 +233,16 @@ a {
     aspect-ratio: 1;
 }
 
+.hours-image {
+    width: 450px;
+    justify-self: center;
+}
+
 .hours-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: max-content;
-    margin-left: auto;
-    margin-right: calc(var(--about-image-width) - calc(350px / 2));
 }
 
 .hours-content {
