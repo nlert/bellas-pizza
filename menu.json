@@ -1,0 +1,54 @@
+{
+    "menu": {
+        "gourmet pizza": [
+            {
+                "item": "Regular Slice",
+                "price": 2.5
+            },
+            {
+                "item": "Specialty Slice",
+                "price": 3.25
+            },
+            {
+                "item": "Sicilian Slice",
+                "price": 3.0
+            }
+        ],
+        "specialty pizza": [
+            {
+                "item": "Chicken and Vodka Sauce",
+                "price 14": 19.95,
+                "price 16": 20.95
+            },
+            {
+                "item": "white",
+                "price 14": 16.95,
+                "price 16": 17.95
+            },
+            {
+                "item": "Vegetable",
+                "price 14": 19.95,
+                "price 16": 20.95
+            },
+            {
+                "item": "Margarita",
+                "price 14": 18.95,
+                "price 16": 19.95
+            }
+        ],
+        "salads": [
+            {
+                "item": "Garden Salad",
+                "price": 7.50
+            },
+            {
+                "item": "Caesar Salad",
+                "price": 6.95
+            },
+            {
+                "item": "Grilled Chicken Salad",
+                "price": 11.95
+            }
+        ]
+    }
+}
