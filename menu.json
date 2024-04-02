@@ -1,6 +1,6 @@
 {
     "menu": {
-        "gourmet pizza": [
+        "gourmet-pizza": [
             {
                 "item": "Regular Slice",
                 "price": 2.5
@@ -11,29 +11,29 @@
             },
             {
                 "item": "Sicilian Slice",
-                "price": 3.0
+                "price": 3.00
             }
         ],
-        "specialty pizza": [
+        "specialty-pizza": [
             {
                 "item": "Chicken and Vodka Sauce",
-                "price 14": 19.95,
-                "price 16": 20.95
+                "price med": 19.95,
+                "price lg": 20.95
             },
             {
                 "item": "white",
-                "price 14": 16.95,
-                "price 16": 17.95
+                "price med": 16.95,
+                "price lg": 17.95
             },
             {
                 "item": "Vegetable",
-                "price 14": 19.95,
-                "price 16": 20.95
+                "price med": 19.95,
+                "price lg": 20.95
             },
             {
                 "item": "Margarita",
-                "price 14": 18.95,
-                "price 16": 19.95
+                "price med": 18.95,
+                "price lg": 19.95
             }
         ],
         "salads": [
