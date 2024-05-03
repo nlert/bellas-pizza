@@ -21,11 +21,12 @@ fetch('menu.json')
 					foodRow.classList.add('food-row');
 
 					const foodItem = document.createElement('p');
+					foodItem.classList.add('food-item');
 					foodItem.textContent = menuItem.item;
 					foodRow.appendChild(foodItem);
 
 					const divider = document.createElement('div');
-					divider.classList.add('divider');
+					divider.classList.add('menu-divider');
 					foodRow.appendChild(divider);
 
 					const itemPrice = document.createElement('p');

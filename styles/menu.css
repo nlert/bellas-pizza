@@ -14,15 +14,15 @@ html {
 
 	width: max-content;
 	height: 100vh;
-	padding-right: 20px;
+	padding-right: 30px;
 
 	display: flex;
 	flex-direction: column;
-	gap: 12px;
+	gap: 20px;
 }
 
 .menu-nav-link {
-	font-size: 18px;
+	font-size: 20px;
     position: relative;
 }
 
@@ -30,7 +30,7 @@ html {
 	content: '';
 	position: absolute;
 	left: 0;
-	bottom: -3px;
+	bottom: -4px;
 	width: 0;
 	height: 3px;
 	background-color: var(--red);
@@ -39,6 +39,10 @@ html {
 
 .menu-nav-link:hover::after {
     width: 100%;
+}
+
+.menu-nav-link:focus {
+    color: #474747;
 }
 
 /* Menu */
@@ -53,8 +57,29 @@ html {
 	border: 3px solid var(--red);
 	border-radius: 15px;
 	padding: 30px 25px;
-
 	width: 100%;
 
 	scroll-margin-top: 125px;
+
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.food-row {
+	width: 100%;
+
+	display: grid;
+	grid-template-columns: max-content 1fr max-content;
+	gap: 15px;
+	align-items: center;
+}
+
+.food-item {
+	font-size: 24px;
+}
+
+.menu-divider {
+	height: 1px;
+	background-color: #B9C1CB;
 }
