@@ -12,31 +12,49 @@
             {
                 "item": "Sicilian Slice",
                 "price": 3.00
+            },
+            {
+                "item": "Luan",
+                "price": 4.00
             }
         ],
         "specialty-pizza": [
             {
                 "item": "Chicken and Vodka Sauce",
-                "price med": 19.95,
-                "price lg": 20.95
+                "priceMed": 19.95,
+                "priceLg": 20.95
             },
             {
                 "item": "white",
-                "price med": 16.95,
-                "price lg": 17.95
+                "priceMed": 16.95,
+                "priceLg": 17.95
             },
             {
                 "item": "Vegetable",
-                "price med": 19.95,
-                "price lg": 20.95
+                "priceMed": 19.95,
+                "priceLg": 20.95
             },
             {
                 "item": "Margarita",
-                "price med": 18.95,
-                "price lg": 19.95
+                "priceMed": 18.95,
+                "priceLg": 19.95
             }
         ],
         "salads": [
+            {
+                "item": "Garden Salad",
+                "price": 7.50
+            },
+            {
+                "item": "Caesar Salad",
+                "price": 6.95
+            },
+            {
+                "item": "Grilled Chicken Salad",
+                "price": 11.95
+            }
+        ],
+        "pasta": [
             {
                 "item": "Garden Salad",
                 "price": 7.50
