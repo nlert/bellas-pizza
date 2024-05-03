@@ -13,17 +13,25 @@ html {
 	right: calc(450px + 50vw);
 
 	width: max-content;
-	height: 100vh;
-	padding-right: 30px;
+	padding-right: 50px;
 
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
 }
 
+.nav-bar::before {
+	content: '';
+	position: absolute;
+	width: 3px;
+	height: 100%;
+	background-color: var(--red);
+}
+
 .menu-nav-link {
 	font-size: 20px;
     position: relative;
+	left: 15px;
 }
 
 .menu-nav-link::after {
