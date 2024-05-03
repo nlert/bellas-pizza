@@ -56,16 +56,142 @@
         ],
         "pasta": [
             {
-                "item": "Garden Salad",
-                "price": 7.50
+                "item": "Spaghetti Carbonara",
+                "price": 12.95
             },
             {
-                "item": "Caesar Salad",
-                "price": 6.95
+                "item": "Fettuccine Alfredo",
+                "price": 11.50
             },
             {
-                "item": "Grilled Chicken Salad",
+                "item": "Penne Arrabiata",
+                "price": 10.95
+            }
+        ],
+        "soups": [
+            {
+                "item": "Chicken Noodle Soup",
+                "price": 5.95
+            },
+            {
+                "item": "Tomato Basil Soup",
+                "price": 4.50
+            },
+            {
+                "item": "Lentil Soup",
+                "price": 6.50
+            }
+        ],
+        "appetizers": [
+            {
+                "item": "Mozzarella Sticks",
+                "price": 8.95
+            },
+            {
+                "item": "Buffalo Wings",
+                "price": 9.50
+            },
+            {
+                "item": "Stuffed Mushrooms",
+                "price": 10.95
+            }
+        ],
+        "sandwiches": [
+            {
+                "item": "Club Sandwich",
+                "price": 9.95
+            },
+            {
+                "item": "BLT Sandwich",
+                "price": 8.50
+            },
+            {
+                "item": "Grilled Cheese Sandwich",
+                "price": 7.95
+            }
+        ],
+        "rolls": [
+            {
+                "item": "California Roll",
+                "price": 10.95
+            },
+            {
+                "item": "Spicy Tuna Roll",
+                "price": 12.50
+            },
+            {
+                "item": "Philadelphia Roll",
                 "price": 11.95
+            }
+        ],
+        "vegetarian-dishes": [
+            {
+                "item": "Vegetable Stir-Fry",
+                "price": 13.95
+            },
+            {
+                "item": "Eggplant Parmesan",
+                "price": 11.50
+            },
+            {
+                "item": "Quinoa Salad",
+                "price": 9.95
+            }
+        ],
+        "heroes": [
+            {
+                "item": "Meatball Hero",
+                "price": 10.95
+            },
+            {
+                "item": "Chicken Parmesan Hero",
+                "price": 12.50
+            },
+            {
+                "item": "Vegetarian Hero",
+                "price": 9.95
+            }
+        ],
+        "seafood": [
+            {
+                "item": "Grilled Salmon",
+                "price": 16.95
+            },
+            {
+                "item": "Shrimp Scampi",
+                "price": 15.50
+            },
+            {
+                "item": "Lobster Bisque",
+                "price": 14.95
+            }
+        ],
+        "chicken-dishes": [
+            {
+                "item": "Lemon Herb Chicken",
+                "price": 14.95
+            },
+            {
+                "item": "Chicken Marsala",
+                "price": 15.50
+            },
+            {
+                "item": "Teriyaki Chicken",
+                "price": 13.95
+            }
+        ],
+        "sausage": [
+            {
+                "item": "Italian Sausage with Peppers and Onions",
+                "price": 11.95
+            },
+            {
+                "item": "Sausage and Broccoli Rabe",
+                "price": 12.50
+            },
+            {
+                "item": "Sausage and Mushroom Risotto",
+                "price": 13.95
             }
         ]
     }
