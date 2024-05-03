@@ -1,3 +1,44 @@
-.menu {
+html {
+    scroll-behavior: smooth;
+}
+
+/* Nav Bar */
+.nav-bar {
+    position: fixed;
+    left: 0;
+
+    width: 200px; 
+    height: 100vh; 
+    padding-left: 25px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.menu-nav-link {
+    font-size: 18px;
+}
+
+/* Menu */
+.menu-wrapper {
     margin-top: 100px;
+    position: relative;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.menu-category {
+    border: 3px solid var(--red);
+    border-radius: 15px;
+    padding: 30px 25px;
+
+    width: 70vw;
+    max-width: 900px;
+
+    scroll-margin-top: 100px;
 }
