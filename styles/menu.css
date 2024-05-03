@@ -1,44 +1,60 @@
 html {
-    scroll-behavior: smooth;
+	scroll-behavior: smooth;
+}
+
+.menu-wrapper {
+	margin-top: 125px;
+	position: relative;
 }
 
 /* Nav Bar */
 .nav-bar {
-    position: fixed;
-    left: 0;
+	position: fixed;
+	right: calc(450px + 50vw);
 
-    width: 200px; 
-    height: 100vh; 
-    padding-left: 25px;
+	width: max-content;
+	height: 100vh;
+	padding-right: 20px;
 
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
 }
 
 .menu-nav-link {
-    font-size: 18px;
-}
-
-/* Menu */
-.menu-wrapper {
-    margin-top: 100px;
+	font-size: 18px;
     position: relative;
 }
 
+.menu-nav-link::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -3px;
+	width: 0;
+	height: 3px;
+	background-color: var(--red);
+	transition: width 300ms;
+}
+
+.menu-nav-link:hover::after {
+    width: 100%;
+}
+
+/* Menu */
 .menu {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
+	display: flex;
+	flex-direction: column;
+	gap: 25px;
+	padding-bottom: 25px;
 }
 
 .menu-category {
-    border: 3px solid var(--red);
-    border-radius: 15px;
-    padding: 30px 25px;
+	border: 3px solid var(--red);
+	border-radius: 15px;
+	padding: 30px 25px;
 
-    width: 70vw;
-    max-width: 900px;
+	width: 100%;
 
-    scroll-margin-top: 100px;
+	scroll-margin-top: 125px;
 }
