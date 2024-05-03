@@ -166,12 +166,3 @@
 .directions {
     color: var(--red);
 }
-
-/* Footer */
-footer {
-    background-color: var(--red);
-    height: 75px;
-    
-    display: grid;
-    place-items: center;
-}

@@ -124,6 +124,15 @@ a {
     text-decoration: none;
 }
 
+/* Footer */
+footer {
+    background-color: var(--red);
+    height: 75px;
+    
+    display: grid;
+    place-items: center;
+}
+
 /* Fade in animation */
 .fade-in {
     transform: translateY(30px);
