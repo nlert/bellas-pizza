@@ -42,7 +42,7 @@ html {
 	width: 0;
 	height: 3px;
 	background-color: var(--red);
-	transition: width 300ms;
+	transition: width 500ms;
 }
 
 .menu-nav-link:hover::after {
@@ -54,11 +54,18 @@ html {
 }
 
 /* Menu */
+.menu-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-bottom: 250px;
+}
+
 .menu {
 	display: flex;
 	flex-direction: column;
 	gap: 25px;
-	padding-bottom: 25px;
+	padding-bottom: 135px;
 }
 
 .menu-category {
@@ -90,4 +97,8 @@ html {
 .menu-divider {
 	height: 1px;
 	background-color: #B9C1CB;
+}
+
+.active::after {
+    width: 100%;
 }

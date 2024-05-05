@@ -48,6 +48,7 @@ fetch('menu.json')
     .then(() => {
         setTimeout(() => {
             fadeIn();
+			underlineNavLinks()
         }, 50);
     })
 
@@ -56,3 +57,22 @@ function fadeIn() {
         element.classList.add("show");
     })
 } 
+
+function underlineNavLinks() {
+	const categories = document.querySelectorAll('.menu-category');
+	const navLinks = document.querySelectorAll('.menu-nav-link');
+
+	window.addEventListener('scroll', () => {
+		const scrollPosition = window.scrollY + 125;
+
+		categories.forEach(category => {
+			const categoryTop = category.offsetTop;
+			const categoryBottom = categoryTop + category.clientHeight;
+
+			if (categoryTop < scrollPosition && categoryBottom > scrollPosition) {
+				navLinks.forEach(link => link.classList.remove('active'));
+				document.getElementById(`nav-${category.id}`).classList.add('active');
+			}
+		})
+	})
+}

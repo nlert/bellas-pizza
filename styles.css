@@ -74,6 +74,62 @@ img {
     text-decoration-color: black;
 }
 
+.color-black a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.order-now {
+    margin-top: 30px;
+    margin-bottom: -5px;
+}
+
+.or {
+    margin-bottom: 5px;
+}
+
+.order-online {
+    --order-button-height: 60px;
+
+    width: 300px;
+    height: var(--order-button-height);
+
+    border-radius: calc(var(--order-button-height) / 2);
+    background-color: black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.order-online:hover {
+    background-color: #343a40;
+}
+
+.order-online a {
+    width: 100%;
+    height: 100%;
+    
+    font-size: 20px;
+    color: white;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone-number {
+    font-size: 56px;
+
+    display: flex;
+    align-items: center;
+}
+
+.fa-phone {
+    font-size: 40px;
+}
+
 .box-shadow {
     box-shadow: var(--box-shadow);
 }
