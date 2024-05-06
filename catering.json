@@ -40,11 +40,6 @@
 		],
 		"meatless-dishes": [
 			{
-				"item": "Fried Calamari",
-				"price-whole": 70.0,
-				"price-half": 40.0
-			},
-			{
 				"item": "Eggplant Parmigiano",
 				"price-whole": 60.0,
 				"price-half": 35.0,

@@ -16,6 +16,67 @@ fetch('catering.json')
 
                 parentElement.appendChild(heading)
 
+                if (category === 'meatless-dishes' || category === 'pasta-trays' || category === 'meat-trays') {
+                    const fakeRow = document.createElement('div');
+                    fakeRow.classList.add('food-row');
+                    fakeRow.classList.add('fake-row');
+
+                    const fakeItem = document.createElement('div');
+					fakeRow.appendChild(fakeItem);
+
+                    const fakeDivider = document.createElement('div');
+					fakeRow.appendChild(fakeDivider);
+
+                    const halfWhole = document.createElement('div');
+					halfWhole.classList.add('price-wrapper');
+
+                    const wholeTitle = document.createElement('p');
+                    wholeTitle.textContent = 'Whole';
+                    wholeTitle.classList.add('small-text');
+                    halfWhole.appendChild(wholeTitle);
+
+                    const halfTitle = document.createElement('p');
+                    halfTitle.textContent = 'Half';
+                    halfTitle.classList.add('small-text');
+                    halfWhole.appendChild(halfTitle);
+
+                    fakeRow.appendChild(halfWhole);
+
+                    parentElement.appendChild(fakeRow);
+                } else if (category === 'antipasto-platters') {
+                    const fakeRow = document.createElement('div');
+                    fakeRow.classList.add('food-row');
+                    fakeRow.classList.add('fake-row');
+
+                    const fakeItem = document.createElement('div');
+					fakeRow.appendChild(fakeItem);
+
+                    const fakeDivider = document.createElement('div');
+					fakeRow.appendChild(fakeDivider);
+
+                    const sml = document.createElement('div');
+					sml.classList.add('price-wrapper-sml');
+
+                    const largeTitle = document.createElement('p');
+                    largeTitle.textContent = 'Large';
+                    largeTitle.classList.add('small-text');
+                    sml.appendChild(largeTitle);
+
+                    const mediumTitle = document.createElement('p');
+                    mediumTitle.textContent = 'Med';
+                    mediumTitle.classList.add('small-text');
+                    sml.appendChild(mediumTitle);
+
+                    const smallTitle = document.createElement('p');
+                    smallTitle.textContent = 'Small';
+                    smallTitle.classList.add('small-text');
+                    sml.appendChild(smallTitle);
+
+                    fakeRow.appendChild(sml);
+
+                    parentElement.appendChild(fakeRow);
+                }
+
 				data.menu[category].forEach((menuItem) => {
 					const foodRow = document.createElement('div');
 					foodRow.classList.add('food-row');
@@ -29,11 +90,39 @@ fetch('catering.json')
 					divider.classList.add('menu-divider');
 					foodRow.appendChild(divider);
 
-					const itemPrice = document.createElement('p');
-
+                    let itemPrice = document.createElement('p');
+					
 					if (category === 'appetizers-/-side-dishes') {
-                        itemPrice.textContent = `$${menuItem.price.toFixed(2)} for ${menuItem.pieces} pieces`;
-					}
+                        itemPrice.textContent = `$${menuItem.price} for ${menuItem.pieces} pieces`;
+					} else if (category === 'meatless-dishes' || category === 'pasta-trays' || category === 'meat-trays') {
+                        itemPrice = document.createElement('div');
+                        itemPrice.classList.add('price-wrapper');
+
+                        const wholePrice = document.createElement('p');
+                        wholePrice.textContent = `$${menuItem["price-whole"]}`;
+                        itemPrice.appendChild(wholePrice);
+
+                        const halfPrice = document.createElement('p');
+                        halfPrice.textContent = `$${menuItem["price-half"]}`;
+                        itemPrice.appendChild(halfPrice);
+                    } else if (category === 'antipasto-platters') {
+                        itemPrice = document.createElement('div');
+                        itemPrice.classList.add('price-wrapper-sml');
+
+                        const largePrice = document.createElement('p');
+                        largePrice.textContent = `$${menuItem['price-lg']}`;
+                        itemPrice.appendChild(largePrice);
+
+                        const mediumPrice = document.createElement('p');
+                        mediumPrice.textContent = `$${menuItem['price-md']}`;
+                        itemPrice.appendChild(mediumPrice);
+
+                        const smallPrice = document.createElement('p');
+                        smallPrice.textContent = `$${menuItem['price-sm']}`;
+                        itemPrice.appendChild(smallPrice);
+                    } else if (category === 'party-subs') {
+                        itemPrice.textContent = `$${menuItem.price} / foot`;
+                    }
 
 					foodRow.appendChild(itemPrice);
 
