@@ -1,0 +1,234 @@
+{
+    "menu": {
+        "gourmet-pizza": [
+            {
+                "item": "Regular Slice",
+                "price": 2.50
+            },
+            {
+                "item": "Specialty Slice",
+                "price": 3.25,
+                "description": "A slice with special toppings and flavors."
+            },
+            {
+                "item": "Sicilian Slice",
+                "price": 3.00,
+                "description": "Thick square-cut slice with a fluffy interior."
+            },
+            {
+                "item": "Luan",
+                "price": 4.00
+            }
+        ],
+        "specialty-pizza": [
+            {
+                "item": "Chicken and Vodka Sauce",
+                "priceMed": 19.95,
+                "priceLg": 20.95
+            },
+            {
+                "item": "white",
+                "priceMed": 16.95,
+                "priceLg": 17.95
+            },
+            {
+                "item": "Vegetable",
+                "priceMed": 19.95,
+                "priceLg": 20.95,
+                "description": "Vegetarian pizza loaded with fresh veggies."
+            },
+            {
+                "item": "Margarita",
+                "priceMed": 18.95,
+                "priceLg": 19.95,
+                "description": "Classic pizza with tomato, mozzarella, and basil."
+            }
+        ],
+        "salads": [
+            {
+                "item": "Garden Salad",
+                "price": 7.50,
+                "description": "Fresh mixed greens with assorted vegetables."
+            },
+            {
+                "item": "Caesar Salad",
+                "price": 6.95,
+                "description": "Classic salad with romaine, croutons, and Caesar dressing."
+            },
+            {
+                "item": "Grilled Chicken Salad",
+                "price": 11.95
+            }
+        ],
+        "pasta": [
+            {
+                "item": "Spaghetti Carbonara",
+                "price": 12.95,
+                "description": "Pasta with creamy egg and bacon sauce."
+            },
+            {
+                "item": "Fettuccine Alfredo",
+                "price": 11.50,
+                "description": "Creamy pasta dish with Parmesan cheese sauce."
+            },
+            {
+                "item": "Penne Arrabiata",
+                "price": 10.95,
+                "description": "Penne pasta with spicy tomato sauce."
+            }
+        ],
+        "soups": [
+            {
+                "item": "Chicken Noodle Soup",
+                "price": 5.95,
+                "description": "Homemade chicken broth with noodles and vegetables."
+            },
+            {
+                "item": "Tomato Basil Soup",
+                "price": 4.50,
+                "description": "Classic tomato soup flavored with fresh basil."
+            },
+            {
+                "item": "Lentil Soup",
+                "price": 6.50,
+                "description": "Hearty soup made with lentils and vegetables."
+            }
+        ],
+        "appetizers": [
+            {
+                "item": "Mozzarella Sticks",
+                "price": 8.95,
+                "description": "Fried cheese sticks served with marinara sauce."
+            },
+            {
+                "item": "Buffalo Wings",
+                "price": 9.50,
+                "description": "Spicy chicken wings served with dipping sauce."
+            },
+            {
+                "item": "Stuffed Mushrooms",
+                "price": 10.95,
+                "description": "Mushroom caps filled with cheese and breadcrumbs."
+            }
+        ],
+        "sandwiches": [
+            {
+                "item": "Club Sandwich",
+                "price": 9.95,
+                "description": "Triple-decker sandwich with turkey, bacon, lettuce, and tomato."
+            },
+            {
+                "item": "BLT Sandwich",
+                "price": 8.50,
+                "description": "Classic sandwich with bacon, lettuce, and tomato."
+            },
+            {
+                "item": "Grilled Cheese Sandwich",
+                "price": 7.95,
+                "description": "Melted cheese sandwiched between grilled bread."
+            }
+        ],
+        "rolls": [
+            {
+                "item": "California Roll",
+                "price": 10.95,
+                "description": "Sushi roll with crab, avocado, and cucumber."
+            },
+            {
+                "item": "Spicy Tuna Roll",
+                "price": 12.50,
+                "description": "Sushi roll with spicy tuna and avocado."
+            },
+            {
+                "item": "Philadelphia Roll",
+                "price": 11.95,
+                "description": "Sushi roll with smoked salmon, cream cheese, and cucumber."
+            }
+        ],
+        "vegetarian-dishes": [
+            {
+                "item": "Vegetable Stir-Fry",
+                "price": 13.95,
+                "description": "Assorted vegetables stir-fried with savory sauce."
+            },
+            {
+                "item": "Eggplant Parmesan",
+                "price": 11.50,
+                "description": "Breaded and fried eggplant topped with marinara and cheese."
+            },
+            {
+                "item": "Quinoa Salad",
+                "price": 9.95,
+                "description": "Healthy salad made with quinoa, vegetables, and vinaigrette."
+            }
+        ],
+        "heroes": [
+            {
+                "item": "Meatball Hero",
+                "price": 10.95,
+                "description": "Submarine sandwich with meatballs and marinara sauce."
+            },
+            {
+                "item": "Chicken Parmesan Hero",
+                "price": 12.50,
+                "description": "Submarine sandwich with breaded chicken and marinara sauce."
+            },
+            {
+                "item": "Vegetarian Hero",
+                "price": 9.95,
+                "description": "Submarine sandwich with assorted vegetables and cheese."
+            }
+        ],
+        "seafood": [
+            {
+                "item": "Grilled Salmon",
+                "price": 16.95,
+                "description": "Fresh salmon fillet grilled to perfection."
+            },
+            {
+                "item": "Shrimp Scampi",
+                "price": 15.50,
+                "description": "Shrimp cooked in garlic butter sauce."
+            },
+            {
+                "item": "Lobster Bisque",
+                "price": 14.95,
+                "description": "Creamy soup made with lobster and spices."
+            }
+        ],
+        "chicken-dishes": [
+            {
+                "item": "Lemon Herb Chicken",
+                "price": 14.95,
+                "description": "Chicken breasts seasoned with herbs and lemon."
+            },
+            {
+                "item": "Chicken Marsala",
+                "price": 15.50,
+                "description": "Chicken cooked in Marsala wine sauce with mushrooms."
+            },
+            {
+                "item": "Teriyaki Chicken",
+                "price": 13.95,
+                "description": "Chicken marinated in sweet teriyaki sauce."
+            }
+        ],
+        "sausage": [
+            {
+                "item": "Italian Sausage with Peppers and Onions",
+                "price": 11.95,
+                "description": "Italian sausage cooked with peppers and onions."
+            },
+            {
+                "item": "Sausage and Broccoli Rabe",
+                "price": 12.50,
+                "description": "Italian sausage served with sautéed broccoli rabe."
+            },
+            {
+                "item": "Sausage and Mushroom Risotto",
+                "price": 13.95,
+                "description": "Creamy risotto with Italian sausage and mushrooms."
+            }
+        ]
+    }
+}
