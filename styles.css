@@ -163,8 +163,31 @@ header {
     gap: 25px;
 }
 
+.nav-link-wrapper {
+    position: relative;
+}
+
 .nav-link {
     font-size: 20px;
+}
+
+.nav-link::after {
+    content: '';
+	position: absolute;
+	left: 0;
+	bottom: -4px;
+	width: 0;
+	height: 2px;
+	background-color: white;
+	transition: width 300ms;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.nav-link-underline::after {
+    width: 100%;
 }
 
 .sub-text {
