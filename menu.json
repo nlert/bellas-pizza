@@ -94,9 +94,45 @@
             {
                 "item": "Stuffed Mushrooms",
                 "price": 10.95
+            },
+            {
+                "item": "Mozzarella Sticks",
+                "price": 8.95
+            },
+            {
+                "item": "Buffalo Wings",
+                "price": 9.50
+            },
+            {
+                "item": "Stuffed Mushrooms",
+                "price": 10.95
             }
         ],
         "sandwiches": [
+            {
+                "item": "Club Sandwich",
+                "price": 9.95
+            },
+            {
+                "item": "BLT Sandwich",
+                "price": 8.50
+            },
+            {
+                "item": "Grilled Cheese Sandwich",
+                "price": 7.95
+            },
+            {
+                "item": "Club Sandwich",
+                "price": 9.95
+            },
+            {
+                "item": "BLT Sandwich",
+                "price": 8.50
+            },
+            {
+                "item": "Grilled Cheese Sandwich",
+                "price": 7.95
+            },
             {
                 "item": "Club Sandwich",
                 "price": 9.95
