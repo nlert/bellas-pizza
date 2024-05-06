@@ -39,6 +39,16 @@ fetch('menu.json')
 
 					foodRow.appendChild(itemPrice);
 
+					if (menuItem.hasOwnProperty('description')) {
+						foodRow.classList.add('food-row-description');
+
+						const descriptionElement = document.createElement('span');
+						descriptionElement.textContent = menuItem.description;
+						descriptionElement.classList.add('menu-description');
+
+						foodRow.appendChild(descriptionElement);
+					}
+
 					parentElement.appendChild(foodRow);
                     menuElement.appendChild(parentElement);
 				});

@@ -53,6 +53,10 @@ html {
     color: #474747;
 }
 
+.active::after {
+    width: 100%;
+}
+
 /* Menu */
 .menu-wrapper {
 	display: flex;
@@ -78,7 +82,7 @@ html {
 
 	display: flex;
 	flex-direction: column;
-	gap: 10px;
+	gap: 20px;
 }
 
 .food-row {
@@ -86,8 +90,12 @@ html {
 
 	display: grid;
 	grid-template-columns: max-content 1fr max-content;
-	gap: 15px;
+	column-gap: 15px;
 	align-items: center;
+}
+
+.food-row-description {
+	grid-template-rows: max-content auto;
 }
 
 .food-item {
@@ -99,6 +107,9 @@ html {
 	background-color: #B9C1CB;
 }
 
-.active::after {
-    width: 100%;
+.menu-description {
+	grid-row: 2 / 3;
+	grid-column: 1 / 4;
+	color: #474747;
+	font-weight: 300;
 }
