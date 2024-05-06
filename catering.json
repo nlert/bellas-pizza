@@ -1,0 +1,276 @@
+{
+	"menu": {
+		"appetizers-/-side-dishes": [
+			{
+				"item": "Italian Bites",
+				"price": 30.0,
+				"pieces": 30,
+				"description": "Sweet Italian Sausage, Peppers, Onions, Mozzarella Cheese Wrapped in dough."
+			},
+			{
+				"item": "Buffalo Wings",
+				"price": 40.0,
+				"pieces": 35,
+				"description": "Spicy chicken wings served with dipping sauce."
+			},
+			{
+				"item": "Mozzarella Sticks",
+				"price": 35.0,
+				"pieces": 30,
+				"description": "Breaded mozzarella cheese sticks served with marinara sauce."
+			},
+			{
+				"item": "Chicken Fingers",
+				"price": 30.0,
+				"pieces": 30,
+				"description": "Breaded chicken tenders served with dipping sauce."
+			},
+			{
+				"item": "Stuffed Prosciutto Peppers",
+				"price": 45.0,
+				"pieces": 30,
+				"description": "Peppers stuffed with prosciutto and cheese, baked to perfection."
+			},
+			{
+				"item": "Bocconcini with Roasted Peppers",
+				"price": 40.0,
+				"pieces": 30,
+				"description": "Fresh bocconcini cheese served with roasted peppers."
+			}
+		],
+		"meatless-dishes": [
+			{
+				"item": "Fried Calamari",
+				"price-whole": 70.0,
+				"price-half": 40.0
+			},
+			{
+				"item": "Eggplant Parmigiano",
+				"price-whole": 60.0,
+				"price-half": 35.0,
+				"description": "Layers of breaded eggplant, marinara sauce, and melted cheese."
+			},
+			{
+				"item": "Cavatelli with Broccoli",
+				"price-whole": 65.0,
+				"price-half": 35.0,
+				"description": "Tender cavatelli pasta served with fresh broccoli florets."
+			},
+			{
+				"item": "Fresh Mozzarella with Roasted Peppers",
+				"price-whole": 70.0,
+				"price-half": 40.0,
+				"description": "Creamy fresh mozzarella cheese paired with roasted bell peppers."
+			},
+			{
+				"item": "Eggplant Rolantine",
+				"price-whole": 70.0,
+				"price-half": 40.0,
+				"description": "Eggplant slices rolled with cheese and herbs, baked to perfection."
+			},
+			{
+				"item": "Grilled Vegetables",
+				"price-whole": 70.0,
+				"price-half": 35.0,
+				"description": "Assorted fresh vegetables grilled to enhance their flavor."
+			}
+		],
+		"antipasto-platters": [
+			{
+				"item": "Italian",
+				"price-sm": 40.00,
+                "price-md": 60.00,
+                "price-lg": 85.00,
+                "description": "Includes Prosciutto, DiParma, Genoa DiLuso, Salami, imported Capicola (Hot or Sweet), Sopressata (Hot or Sweet),Motadella, Sharp Provalone, Roasted Peppers, and Olive Salad."
+			},
+            {
+				"item": "Classic",
+				"price-sm": 40.00,
+                "price-md": 55.00,
+                "price-lg": 80.00,
+                "description": "Includes Boar's Head Boiled Ham, Roasted Turkey Breast, Genoa Salami, Imported Swiss Cheese, Provalone, Roasted Peppers, and Assorted Olives."
+			},
+            {
+				"item": "Veggie Delight",
+				"price-sm": 40.00,
+                "price-md": 55.00,
+                "price-lg": 80.00,
+                "description": "Includes Fresh Mozzarella, Roasted Peppers, Marinated Artichoke Hearts, Sundried Tomatoes, Olive Salad, Stuffed Peppers (Breadcrumbs, Parmigiano, Anchovy Paste)."
+			}
+		],
+		"pasta-trays": [
+			{
+                "item": "Meat Lasagna",
+                "price-whole": 85.00,
+                "price-half": 45.00,
+                "description": "Layers of lasagna noodles, meat sauce, and cheese."
+            },
+            {
+                "item": "Cheese Lasagna",
+                "price-whole": 65.00,
+                "price-half": 40.00,
+                "description": "Layers of lasagna noodles and creamy cheese filling."
+            },
+            {
+                "item": "Baked Ziti",
+                "price-whole": 60.00,
+                "price-half": 30.00,
+                "description": "Ziti pasta baked with marinara sauce and cheese."
+            },
+            {
+                "item": "Baked Ziti with Meat Sauce",
+                "price-whole": 75.00,
+                "price-half": 30.00,
+                "description": "Ziti pasta baked with meat sauce and cheese."
+            },
+            {
+                "item": "Rigatoni with Marinara Sauce",
+                "price-whole": 65.00,
+                "price-half": 35.00,
+                "description": "Rigatoni pasta served with marinara sauce."
+            },
+            {
+                "item": "Penne with Vodka Sauce",
+                "price-whole": 65.00,
+                "price-half": 35.00,
+                "description": "Penne pasta served with creamy vodka sauce."
+            },
+            {
+                "item": "Meat Tortellini with Marinara Sauce",
+                "price-whole": 60.00,
+                "price-half": 30.00,
+                "description": "Meat-filled tortellini served with marinara sauce."
+            },
+            {
+                "item": "Meat Tortellini with Meat Sauce",
+                "price-whole": 70.00,
+                "price-half": 35.00,
+                "description": "Meat-filled tortellini served with meat sauce."
+            },
+            {
+                "item": "Cheese Tortellini with Marinara Sauce",
+                "price-whole": 60.00,
+                "price-half": 30.00,
+                "description": "Cheese-filled tortellini served with marinara sauce."
+            },
+            {
+                "item": "Cheese Tortellini with Meat Sauce",
+                "price-whole": 65.00,
+                "price-half": 35.00,
+                "description": "Cheese-filled tortellini served with meat sauce."
+            },
+            {
+                "item": "Cheese Tortellini with Alfredo Sauce",
+                "price-whole": 65.00,
+                "price-half": 35.00,
+                "description": "Cheese-filled tortellini served with creamy alfredo sauce."
+            },
+            {
+                "item": "Cheese Ravioli with Marinara Sauce",
+                "price-whole": 65.00,
+                "price-half": 35.00,
+                "description": "Cheese-filled ravioli served with marinara sauce."
+            },
+            {
+                "item": "Cheese Ravioli with Vodka Sauce",
+                "price-whole": 65.00,
+                "price-half": 35.00,
+                "description": "Cheese-filled ravioli served with creamy vodka sauce."
+            },
+            {
+                "item": "Spaghetti with Marinara Sauce",
+                "price-whole": 55.00,
+                "price-half": 35.00,
+                "description": "Spaghetti pasta served with marinara sauce."
+            },
+            {
+                "item": "Spaghetti with Meat Sauce",
+                "price-whole": 60.00,
+                "price-half": 30.00,
+                "description": "Spaghetti pasta served with meat sauce."
+            },
+            {
+                "item": "Cavatelli with Broccoli",
+                "price-whole": 65.00,
+                "price-half": 35.00,
+                "description": "Cavatelli pasta served with broccoli in a garlic sauce."
+            },
+            {
+                "item": "Meat Tortellini With Cheese Sauce",
+                "price-whole": 75.00,
+                "price-half": 35.00,
+                "description": "Meat-filled tortellini served with creamy cheese sauce."
+            }
+		],
+		"meat-trays": [
+			{
+                "item": "Chicken Parmigiano",
+                "price-whole": 70.00,
+                "price-half": 45.00,
+                "description": "Breaded chicken topped with marinara sauce and melted mozzarella cheese."
+            },
+            {
+                "item": "Chicken Marsala",
+                "price-whole": 75.00,
+                "price-half": 45.00,
+                "description": "Chicken breast cooked in a Marsala wine sauce with mushrooms."
+            },
+            {
+                "item": "Chicken with Peppers and Onions",
+                "price-whole": 75.00,
+                "price-half": 45.00,
+                "description": "Grilled chicken breast served with sautéed peppers and onions."
+            },
+            {
+                "item": "Sausage with Peppers and Onions",
+                "price-whole": 70.00,
+                "price-half": 40.00,
+                "description": "Italian sausage cooked with sautéed peppers and onions."
+            },
+            {
+                "item": "Meatballs in Marinara Sauce",
+                "price-whole": 70.00,
+                "price-half": 40.00,
+                "description": "Homemade meatballs served in a classic marinara sauce."
+            },
+            {
+                "item": "Meatballs with Peppers and Onions",
+                "price-whole": 70.00,
+                "price-half": 40.00,
+                "description": "Meatballs cooked with sautéed peppers and onions in marinara sauce."
+            }
+		],
+		"party-subs": [
+			{
+                "item": "Boar's Head Boiled Ham, Genoa DiLuso Salami, Provolone",
+                "price": 17.95,
+                "description": "A classic combination of Boar's Head Boiled Ham, Genoa DiLuso Salami, and Provolone cheese."
+            },
+            {
+                "item": "Boar's Head Roast Beef with choice of Cheese",
+                "price": 17.95,
+                "description": "Delicious Boar's Head Roast Beef served with your choice of cheese."
+            },
+            {
+                "item": "Boar's Head Roasted Turkey Breast with choice of Cheese",
+                "price": 17.95,
+                "description": "Tender Boar's Head Roasted Turkey Breast served with your choice of cheese."
+            },
+            {
+                "item": "Prosciutto, Fresh Mozzarella and Roasted Peppers",
+                "price": 19.95,
+                "description": "A gourmet combination of Prosciutto, Fresh Mozzarella, and Roasted Peppers."
+            },
+            {
+                "item": "Fresh Mozzarella, Roasted Peppers and Sundried Tomatoes",
+                "price": 18.95,
+                "description": "Fresh Mozzarella, Roasted Peppers, and Sundried Tomatoes come together for a flavorful option."
+            },
+            {
+                "item": "Italian Classic Combo",
+                "price": 17.95,
+                "description": "A classic Italian combination featuring assorted meats and cheeses."
+            }
+		]
+	}
+}
