@@ -54,6 +54,10 @@ p,
     font-size: 28px;
 }
 
+.small-text {
+    font-size: 20px;
+}
+
 .light {
     font-weight: 400;
 }
