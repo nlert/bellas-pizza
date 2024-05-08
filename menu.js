@@ -30,6 +30,7 @@ fetch('menu.json')
 					foodRow.appendChild(divider);
 
 					const itemPrice = document.createElement('p');
+					itemPrice.classList.add('item-price');
 
 					if (category === 'specialty-pizza') {
 						itemPrice.textContent = '$' + menuItem.priceLg.toFixed(2);
