@@ -116,6 +116,7 @@
     /* Menu */
     .menu-wrapper {
         grid-template-rows: auto auto !important;
+        margin-top: 25px !important;
     }
 
     .menu.width {
@@ -155,6 +156,10 @@
     .menu-description {
         font-size: 12px !important;
         grid-column: 1 / 4 !important;
+    }
+
+    .food-row p {
+        font-size: 14px !important;
     }
 
     /* Menu Navbar */
@@ -224,12 +229,6 @@
 
     .hide-mobile {
         display: none !important;
-    }
-}
-
-@media (max-width: 970px) {
-    .food-row p {
-        font-size: 14px !important;
     }
 }
 
