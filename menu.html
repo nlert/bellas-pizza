@@ -11,6 +11,7 @@
 		<script src="https://kit.fontawesome.com/8f4103f87d.js" crossorigin="anonymous"></script>
 		<script defer src="header.js"></script>
 		<script defer src="menu.js"></script>
+		<script defer src="responsiveNav.js"></script>
 	</head>
 	<body>
 		<header id="header">
@@ -34,7 +35,13 @@
 			</div>
 		</header>
 		<div class="menu-wrapper">
-			<nav class="nav-bar">
+			<div class="bars-wrapper grid" id="bars">
+				<svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#fff"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+			</div>
+			<div class="close-wrapper" id="close">
+				<svg xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e8eaed"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+			</div>
+			<nav id="navbar" class="nav-bar hide-mobile">
 				<div class="menu-nav-link-wrapper">
 					<a href="#gourmet-pizza" id="nav-gourmet-pizza" class="color-black menu-nav-link active"
 						>Gourmet Pizza</a
@@ -84,7 +91,7 @@
 				</div>
 			</nav>
 			<div id="menu" class="menu width"></div>
-			<div>
+			<div class="phone-wrapper">
                 <h3 class="order-now">Call in your order:</h3>
                 <p class="phone-number fade-in color-black">
                     <a href="tel:908-879-0015">
