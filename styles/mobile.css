@@ -145,6 +145,11 @@
         gap: 5px !important;
     }
 
+    .price-wrapper-specialty {
+        grid-template-columns: repeat(2, 50px);
+        gap: 5px !important;
+    }
+
     .food-row {
         grid-template-columns: auto 1fr max-content !important;
     }

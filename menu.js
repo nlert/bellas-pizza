@@ -19,6 +19,35 @@ fetch('menu.json')
 
 				parentElement.appendChild(heading);
 
+				if (category === "specialty-pizza") {
+					const fakeRow = document.createElement('div');
+                    fakeRow.classList.add('food-row');
+                    fakeRow.classList.add('fake-row');
+
+                    const fakeItem = document.createElement('div');
+					fakeRow.appendChild(fakeItem);
+
+                    const fakeDivider = document.createElement('div');
+					fakeRow.appendChild(fakeDivider);
+
+                    const largeMed = document.createElement('div');
+					largeMed.classList.add('price-wrapper-specialty');
+
+                    const largeTitle = document.createElement('p');
+                    largeTitle.textContent = 'Large';
+                    largeTitle.classList.add('small-text');
+                    largeMed.appendChild(largeTitle);
+
+                    const medTitle = document.createElement('p');
+                    medTitle.textContent = 'Med';
+                    medTitle.classList.add('small-text');
+                    largeMed.appendChild(medTitle);
+
+                    fakeRow.appendChild(largeMed);
+
+                    parentElement.appendChild(fakeRow);
+				}
+
 				data.menu[category].forEach((menuItem) => {
 					if (menuItem.item === "Toppings") {
 						const toppingsContainer = document.createElement('div');
@@ -54,11 +83,19 @@ fetch('menu.json')
 					divider.classList.add('menu-divider');
 					foodRow.appendChild(divider);
 
-					const itemPrice = document.createElement('p');
-					itemPrice.classList.add('item-price');
+					let itemPrice = document.createElement('p');
 
 					if (category === 'specialty-pizza') {
-						itemPrice.textContent = '$' + menuItem.priceLg.toFixed(2);
+						itemPrice = document.createElement('div');
+                        itemPrice.classList.add('price-wrapper-specialty');
+
+                        const largePrice = document.createElement('p');
+                        largePrice.textContent = `$${menuItem["priceLg"].toFixed(2)}`;
+                        itemPrice.appendChild(largePrice);
+
+                        const medPrice = document.createElement('p');
+                        medPrice.textContent = `$${menuItem["priceMed"].toFixed(2)}`;
+                        itemPrice.appendChild(medPrice);
 					} else {
 						itemPrice.textContent = '$' + menuItem.price.toFixed(2);
 					}

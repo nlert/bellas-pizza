@@ -145,6 +145,12 @@ html {
 	gap: 20px;
 }
 
+.price-wrapper-specialty {
+	display: grid;
+	grid-template-columns: repeat(2, 100px);
+	gap: 20px;
+}
+
 .menu-divider {
 	height: 1px;
 	background-color: #B9C1CB;
