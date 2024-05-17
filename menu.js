@@ -53,20 +53,30 @@ fetch('menu.json')
 						const toppingsContainer = document.createElement('div');
 						toppingsContainer.classList.add('toppings-container');
 
-						const toppingsTitle = document.createElement('p');
-						toppingsTitle.classList.add('food-item');
-						toppingsTitle.textContent = menuItem.item + " ";
-						toppingsContainer.appendChild(toppingsTitle);
+						if (category !== "pasta") { 
+							const toppingsTitle = document.createElement('p');
+							toppingsTitle.classList.add('food-item');
+							toppingsTitle.textContent = menuItem.item + " ";
+							toppingsContainer.appendChild(toppingsTitle);
 
-						const toppingsPrice = document.createElement('span');
-						toppingsPrice.textContent = menuItem.price;
-						toppingsPrice.classList.add('small-red');
-						toppingsTitle.appendChild(toppingsPrice);
-
+							const toppingsPrice = document.createElement('span');
+							toppingsPrice.textContent = menuItem.price;
+							toppingsPrice.classList.add('small-red');
+							toppingsTitle.appendChild(toppingsPrice);
+						}
 						const toppingsList = displayToppingsList(menuItem.toppings);
 						toppingsContainer.appendChild(toppingsList);
 
 						parentElement.appendChild(toppingsContainer);
+
+						return;
+					} else if (menuItem.item === "served-with") {
+						const servedWith = document.createElement('span');
+						servedWith.classList.add('small-red');
+						servedWith.classList.add('served-with');
+						servedWith.textContent = menuItem.text;
+
+						parentElement.appendChild(servedWith);
 
 						return;
 					}

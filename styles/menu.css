@@ -163,6 +163,10 @@ html {
 	font-weight: 300;
 }
 
+.served-with {
+	margin-top: -20px;
+}
+
 /* Toppings */
 .toppings-container {
 	display: flex;
@@ -173,6 +177,7 @@ html {
 	border: 1px solid #B9C1CB;
 	border-radius: 15px;
 	padding: 15px;
+	width: max-content;
 
 	display: grid;
 	grid-template-columns: repeat(3, max-content);

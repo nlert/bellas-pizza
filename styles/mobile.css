@@ -180,9 +180,7 @@
     }
 
     .toppings-list {
-        grid-template-columns: repeat(4, max-content);
         column-gap: 25px;
-        width: max-content;
     }
 
     /* Menu Navbar */
