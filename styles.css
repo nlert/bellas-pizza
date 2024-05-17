@@ -44,7 +44,7 @@ h2 {
     line-height: 0.8;
 }
 
-h3 {
+h3, .small-red {
     color: var(--red);
     font-size: 18px;
 }

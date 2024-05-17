@@ -145,6 +145,11 @@
         gap: 5px !important;
     }
 
+    .price-wrapper-specialty {
+        grid-template-columns: repeat(2, 50px);
+        gap: 5px !important;
+    }
+
     .food-row {
         grid-template-columns: auto 1fr max-content !important;
     }
@@ -158,8 +163,24 @@
         grid-column: 1 / 4 !important;
     }
 
-    .food-row p {
+    .food-row p, .food-item {
         font-size: 14px !important;
+    }
+
+    .small-red {
+        font-size: 12px;
+    }
+
+    .topping-item {
+        font-size: 12px !important;
+    }
+
+    .toppings-container {
+        flex-direction: column;
+    }
+
+    .toppings-list {
+        column-gap: 25px;
     }
 
     /* Menu Navbar */
@@ -237,5 +258,11 @@
     .nav-bar {
         border-right: none !important;
         width: 100vw !important;
+    }
+
+    .toppings-list {
+        grid-template-columns: repeat(2, max-content);
+        column-gap: 25px;
+        width: max-content;
     }
 }

@@ -145,6 +145,12 @@ html {
 	gap: 20px;
 }
 
+.price-wrapper-specialty {
+	display: grid;
+	grid-template-columns: repeat(2, 100px);
+	gap: 20px;
+}
+
 .menu-divider {
 	height: 1px;
 	background-color: #B9C1CB;
@@ -155,4 +161,29 @@ html {
 	grid-column: 1 / 3;
 	color: #474747;
 	font-weight: 300;
+}
+
+.served-with {
+	margin-top: -20px;
+}
+
+/* Toppings */
+.toppings-container {
+	display: flex;
+	gap: 15px;
+}
+
+.toppings-list {
+	border: 1px solid #B9C1CB;
+	border-radius: 15px;
+	padding: 15px;
+	width: max-content;
+
+	display: grid;
+	grid-template-columns: repeat(3, max-content);
+	column-gap: 50px;
+}
+
+.topping-item {
+	font-size: 16px;
 }
