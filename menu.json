@@ -2,12 +2,18 @@
     "menu": {
         "gourmet-pizza": [
             {
-                "item": "Medium - 14\"",
-                "price": 14.95
+                "item": "Medium",
+                "price": 14.95,
+                "description": "6 slices - 14\""
             },
             {
-                "item": "Large - 16\"",
-                "price": 15.95
+                "item": "Large",
+                "price": 15.95,
+                "description": "8 slices - 16\""
+            },
+            {
+                "item": "Sicilian",
+                "price": 20.95
             },
             {
                 "item": "Toppings",
@@ -36,227 +42,521 @@
             },
             {
                 "item": "Specialty Slice",
-                "price": 3.25,
-                "description": "A slice with special toppings and flavors."
+                "price": 3.50
             },
             {
                 "item": "Sicilian Slice",
-                "price": 3.00,
-                "description": "Thick square-cut slice with a fluffy interior."
-            },
-            {
-                "item": "Luan",
-                "price": 4.00
+                "price": 3.00
             }
         ],
         "specialty-pizza": [
             {
-                "item": "Chicken and Vodka Sauce",
-                "priceMed": 19.95,
-                "priceLg": 20.95
+                "item": "White",
+                "priceMed": 17.95,
+                "priceLg": 18.95
             },
             {
-                "item": "white",
-                "priceMed": 16.95,
-                "priceLg": 17.95
+                "item": "Chicken & Vodka Sauce",
+                "priceMed": 21.95,
+                "priceLg": 22.95
             },
             {
                 "item": "Vegetable",
-                "priceMed": 19.95,
-                "priceLg": 20.95,
-                "description": "Vegetarian pizza loaded with fresh veggies."
+                "priceMed": 21.95,
+                "priceLg": 22.95
             },
             {
-                "item": "Margarita",
+                "item": "Chicken Cacciatore",
+                "priceMed": 21.95,
+                "priceLg": 22.95
+            },
+            {
+                "item": "Chicken & Fresh Tomato",
+                "priceMed": 21.95,
+                "priceLg": 22.95
+            },
+            {
+                "item": "Fresh Mozzarella Margarita",
+                "priceMed": 17.95,
+                "priceLg": 18.95
+            },
+            {
+                "item": "Eggplant & Ricotta",
                 "priceMed": 18.95,
-                "priceLg": 19.95,
-                "description": "Classic pizza with tomato, mozzarella, and basil."
+                "priceLg": 19.95
+            },
+            {
+                "item": "Meat Lovers Supreme",
+                "priceMed": 21.95,
+                "priceLg": 22.95
             }
         ],
         "salads": [
             {
                 "item": "Garden Salad",
                 "price": 7.50,
-                "description": "Fresh mixed greens with assorted vegetables."
+                "description": "Tomato, Lettuce, Olives, Marinated Mushrooms, sweet Red Peppers & Croutons."
+            },
+            {
+                "item": "Cheese Salad",
+                "price": 9.95,
+                "description": "Garden Salad topped with Mozzarella, Provolone & Gorgonzola."
             },
             {
                 "item": "Caesar Salad",
-                "price": 6.95,
-                "description": "Classic salad with romaine, croutons, and Caesar dressing."
+                "price": 7.95,
+                "description": "Romaine Lettuce, Seasoned Croutons and Creamy Caesar Dressing."
             },
             {
                 "item": "Grilled Chicken Salad",
+                "price": 11.95,
+                "description": "Garden Salad topped with Grilled Chicken."
+            },
+            {
+                "item": "Grilled Chicken Caesar Salad",
+                "price": 11.95,
+                "description": "Caesar Salad topped with Grilled Chicken."
+            },
+            {
+                "item": "Tuna Salad",
+                "price": 11.95,
+                "description": "Garden Salad topped with a generous scoop of Tuna."
+            },
+            {
+                "item": "Mozzarella Caprese",
+                "price": 10.95,
+                "description": "Fresh Mozzarella, Tomato, Fresh Basil, and extra Virgin Olive Oil."
+            },
+            {
+                "item": "Antipasto",
+                "price": 10.95,
+                "description": "Assorted Italian Meats and Cheeses with Olives over Greens."
+            },
+            {
+                "item": "Chef Salad",
+                "price": 10.95,
+                "description": "Ham, Salami & Provolone chopped and laid over a Garden Salad."
+            },
+            {
+                "item": "Buffalo Chicken Salad",
                 "price": 11.95
             }
         ],
         "pasta": [
             {
-                "item": "Spaghetti Carbonara",
-                "price": 12.95,
-                "description": "Pasta with creamy egg and bacon sauce."
+                "item": "Ravioli",
+                "price": 15.95
+            },
+            {
+                "item": "Linguine White Clam Sauce",
+                "price": 18.95
+            },
+            {
+                "item": "Baked Penne",
+                "price": 16.95
+            },
+            {
+                "item": "Tomato Sauce",
+                "price": 14.95
+            },
+            {
+                "item": "Bolognese",
+                "price": 16.95,
+                "description": "An Italian meat sauce."
+            },
+            {
+                "item": "Marinara Sauce",
+                "price": 14.95
+            },
+            {
+                "item": "Sausage or Meatball",
+                "price": 16.95
+            },
+            {
+                "item": "Garlic & Oil",
+                "price": 14.95,
+                "description": "With a touch of fresh Parsley."
+            },
+            {
+                "item": "Cavatelli with Broccoli Rabe",
+                "price": 18.95
             },
             {
                 "item": "Fettuccine Alfredo",
-                "price": 11.50,
-                "description": "Creamy pasta dish with Parmesan cheese sauce."
+                "price": 16.95,
+                "description": "Heavy cream & Cheese."
             },
             {
-                "item": "Penne Arrabiata",
-                "price": 10.95,
-                "description": "Penne pasta with spicy tomato sauce."
+                "item": "Fettuccine Alfredo with Shrimp",
+                "price": 20.95
+            },
+            {
+                "item": "Pasta Primavera",
+                "price": 18.95,
+                "description": "Zucchini, Broccoli, Peas, Carrots & Mushrooms."
+            },
+            {
+                "item": "Penne Vodka Sauce",
+                "price": 16.95
+            },
+            {
+                "item": "Pasta Carbonara",
+                "price": 16.95,
+                "description": "Prosciutto, Cream Butter & Egg Yolk."
+            },
+            {
+                "item": "Tortellini alla Panna",
+                "price": 17.95,
+                "description": "Ham & Peas in a cream sauce."
+            },
+            {
+                "item": "Rigatoni Fillettto",
+                "price": 15.95,
+                "description": "Sautéed with Onions & Prosciutto in a light Marinara Sauce."
+            },
+            {
+                "item": "Penne di Napoli",
+                "price": 19.95,
+                "description": "Sweet Italian Sausage and Broccoli Rabe sautéed in Fresh Garlic & Olive Oil."
             }
         ],
         "soups": [
             {
-                "item": "Chicken Noodle Soup",
-                "price": 5.95,
-                "description": "Homemade chicken broth with noodles and vegetables."
+                "item": "Pasta Fagiole or Escarole & Beans",
+                "price": 6.95
             },
             {
-                "item": "Tomato Basil Soup",
-                "price": 4.50,
-                "description": "Classic tomato soup flavored with fresh basil."
+                "item": "Chicken Noodle",
+                "price": 6.95
             },
             {
-                "item": "Lentil Soup",
-                "price": 6.50,
-                "description": "Hearty soup made with lentils and vegetables."
+                "item": "Tortellini with Chicken Broth",
+                "price": 6.95
+            },
+            {
+                "item": "Chicken Rice",
+                "price": 6.95
+            },
+            {
+                "item": "Stracciatella Soup",
+                "price": 6.95
             }
         ],
         "appetizers": [
             {
-                "item": "Mozzarella Sticks",
-                "price": 8.95,
-                "description": "Fried cheese sticks served with marinara sauce."
+                "item": "Garlic Bread with Cheese",
+                "price": 4.95
+            },
+            {
+                "item": "Spinach in Garlic and Oil",
+                "price": 7.95
+            },
+            {
+                "item": "Broccoli in Garlic and Oil",
+                "price": 7.95
+            },
+            {
+                "item": "Broccoli Rabe in Garlic and Oil",
+                "price": 9.95
+            },
+            {
+                "item": "Mozarella Sticks",
+                "price": 7.95,
+                "description": "Comes with 6 sticks."
             },
             {
                 "item": "Buffalo Wings",
-                "price": 9.50,
-                "description": "Spicy chicken wings served with dipping sauce."
+                "price": 9.95,
+                "description": "Comes with 8 wings."
             },
             {
-                "item": "Stuffed Mushrooms",
-                "price": 10.95,
-                "description": "Mushroom caps filled with cheese and breadcrumbs."
+                "item": "Chicken Fingers",
+                "price": 8.95,
+                "description": "Comes with 5 fingers."
+            },
+            {
+                "item": "French Fries",
+                "price": 4.50
+            },
+            {
+                "item": "Meatballs",
+                "price": 7.95,
+                "description": "Comes with 3 Meatballs."
+            },
+            {
+                "item": "Sausage",
+                "price": 7.95
+            },
+            {
+                "item": "Sauteed Vegatables",
+                "price": 8.95
+            },
+            {
+                "item": "Fried Calamari",
+                "price": 13.95
             }
         ],
         "sandwiches": [
             {
-                "item": "Club Sandwich",
-                "price": 9.95,
-                "description": "Triple-decker sandwich with turkey, bacon, lettuce, and tomato."
+                "item": "Marie Bella Donna's",
+                "price": 10.95,
+                "description": "Grilled Chicken with Broccoli Rabe and Fresh Mozzarella on a hero with Balsamic Vinegar."
             },
             {
-                "item": "BLT Sandwich",
-                "price": 8.50,
-                "description": "Classic sandwich with bacon, lettuce, and tomato."
+                "item": "The All American",
+                "price": 10.95,
+                "description": "Ham, Turkey, Roast Beef, American Cheese, lettuce, tomato, mayo & mustard."
             },
             {
-                "item": "Grilled Cheese Sandwich",
-                "price": 7.95,
-                "description": "Melted cheese sandwiched between grilled bread."
+                "item": "Eggplant Supreme",
+                "price": 10.95,
+                "description": "Eggplant fried in olive oil, with mozzarella, tomato, olive oil and basil."
+            },
+            {
+                "item": "The Godmother",
+                "price": 10.95,
+                "description": "Sweet sopressata, eggplant, ham, provolone, roasted peppers, olive oil and vinegar."
+            },
+            {
+                "item": "John's Favorite",
+                "price": 10.95,
+                "description": "Grilled Chicken, mozzarella, roasted peppers, lettuce, tomato, mayo, oil and vinegar."
+            },
+            {
+                "item": "Mouth of Fire",
+                "price": 10.95,
+                "description": "Hot capicola, sopressata and hot peppers."
+            },
+            {
+                "item": "The Old English",
+                "price": 10.95,
+                "description": "Roast beef, cheddar, romaine, tomato, and Italian dressing."
+            },
+            {
+                "item": "Tuscan Chicken Delight",
+                "price": 10.95,
+                "description": "Chicken Breast, Arugula, sun-dried tomato, Italian dressing."
+            },
+            {
+                "item": "Philadelphia Chaser",
+                "price": 10.95,
+                "description": "Roast Beef, melted provolone, romaine, tomato, oil & vinegar on a toasted hero."
+            },
+            {
+                "item": "Roller Coaster Hero",
+                "price": 10.95,
+                "description": "Turkey, American cheese, peppers, onions, lettuce, tomato, cole slaw & Russian dressing."
             }
         ],
         "rolls": [
             {
-                "item": "California Roll",
-                "price": 10.95,
-                "description": "Sushi roll with crab, avocado, and cucumber."
+                "item": "Spinach",
+                "price": 11.95
             },
             {
-                "item": "Spicy Tuna Roll",
-                "price": 12.50,
-                "description": "Sushi roll with spicy tuna and avocado."
+                "item": "Chicken Parmigiano",
+                "price": 11.95
             },
             {
-                "item": "Philadelphia Roll",
-                "price": 11.95,
-                "description": "Sushi roll with smoked salmon, cream cheese, and cucumber."
+                "item": "Eggplant Parmigiano",
+                "price": 11.95
+            },
+            {
+                "item": "Broccoli Rabe",
+                "price": 12.95
+            },
+            {
+                "item": "Sausage & Peppers",
+                "price": 11.95
+            },
+            {
+                "item": "Meatball Parmigiano",
+                "price": 11.95
+            },
+            {
+                "item": "Chicken Marsala",
+                "price": 12.95
+            },
+            {
+                "item": "Chicken Broccoli",
+                "price": 12.95
             }
         ],
         "vegetarian-dishes": [
             {
-                "item": "Vegetable Stir-Fry",
-                "price": 13.95,
-                "description": "Assorted vegetables stir-fried with savory sauce."
+                "item": "Eggplant Parmigiano",
+                "price": 15.95,
+                "description": "Breaded Eggplant topped with Tomato Sauce, Mozzarella then Baked with Mozzarella."
             },
             {
-                "item": "Eggplant Parmesan",
-                "price": 11.50,
-                "description": "Breaded and fried eggplant topped with marinara and cheese."
+                "item": "Eggplant Rollatini",
+                "price": 18.95,
+                "description": "Stuffed with Ricotta Cheese and baked with Mozzarella."
             },
             {
-                "item": "Quinoa Salad",
-                "price": 9.95,
-                "description": "Healthy salad made with quinoa, vegetables, and vinaigrette."
+                "item": "Eggplant Rollatini Genovese",
+                "price": 19.95,
+                "description": "Stuffed with Ricotta and spinach & topped with Tomato Sauce, Mozzarella then Baked."
             }
         ],
         "heroes": [
             {
-                "item": "Meatball Hero",
+                "item": "Meatballs with Tomato Sauce",
+                "price": 10.95
+            },
+            {
+                "item": "Sausage with Tomato Sauce",
+                "price": 10.95
+            },
+            {
+                "item": "Chicken Cutlet with Tomato Sauce",
+                "price": 10.95
+            },
+            {
+                "item": "Chicken Cutlet with Lettuce & Tomato",
+                "price": 10.95
+            },
+            {
+                "item": "Chicken & Peppers",
+                "price": 10.95
+            },
+            {
+                "item": "Grilled Chicken",
                 "price": 10.95,
-                "description": "Submarine sandwich with meatballs and marinara sauce."
+                "description": "With Lettuce, Tomato, Oil & Vinegar"
             },
             {
-                "item": "Chicken Parmesan Hero",
-                "price": 12.50,
-                "description": "Submarine sandwich with breaded chicken and marinara sauce."
+                "item": "Chicken Francese",
+                "price": 11.95
             },
             {
-                "item": "Vegetarian Hero",
-                "price": 9.95,
-                "description": "Submarine sandwich with assorted vegetables and cheese."
+                "item": "Chicken Marsala",
+                "price": 11.95
+            },
+            {
+                "item": "Mozzarella & Eggs",
+                "price": 10.95
+            },
+            {
+                "item": "Potato & Eggs",
+                "price": 10.95
+            },
+            {
+                "item": "Peppers & Eggs",
+                "price": 10.95
+            },
+            {
+                "item": "Philly Cheese Steak",
+                "price": 10.95,
+                "description": "With Onions & Peppers"
+            },
+            {
+                "item": "Shrimp Parmigiano",
+                "price": 12.95
+            },
+            {
+                "item": "Buffalo Chicken Sub",
+                "price": 10.95
             }
         ],
         "seafood": [
             {
-                "item": "Grilled Salmon",
-                "price": 16.95,
-                "description": "Fresh salmon fillet grilled to perfection."
+                "item": "Calamari Marinara over Linguini",
+                "price": 19.95,
+                "description": "Calamari sautéed in a light Marinara Sauce"
             },
             {
-                "item": "Shrimp Scampi",
-                "price": 15.50,
-                "description": "Shrimp cooked in garlic butter sauce."
+                "item": "Shrimp & Calamari Fra Diavolo",
+                "price": 24.95,
+                "description": "Shrimp & Calamari sautéed in a spicy Marinara Sauce served over Linguini."
             },
             {
-                "item": "Lobster Bisque",
-                "price": 14.95,
-                "description": "Creamy soup made with lobster and spices."
+                "item": "Shrimp Marinara over Linguini",
+                "price": 21.95,
+                "description": "Shrimp sautéed in a light Marinara Sauce."
+            },
+            {
+                "item": "Shrimp Fra Diavolo over Linguini",
+                "price": 21.95,
+                "description": "Shrimp sautéed in a spicy Marinara Sauce."
+            },
+            {
+                "item": "Shrimp Parmigiano over Linguini",
+                "price": 21.95,
+                "description": "Fried Breaded Shrimp topped with Tomato Sauce and Baked with Mozzarella Cheese."
+            },
+            {
+                "item": "Shrimp Broccoli with Cream Sauce",
+                "price": 21.95,
+                "description": "Heavy Cream, butter & Parmesan cheese served over Linguini."
+            },
+            {
+                "item": "Shrimp Francese over Linguini",
+                "price": 21.95,
+                "description": "Egg battered Shrimp sautéed in Lemon & White Wine Sauce."
+            },
+            {
+                "item": "Linguine alla Bella",
+                "price": 25.95,
+                "description": "Shrimp, Calamari & Baby Clams in a light Marinara Sauce or Fra Diavolo."
             }
         ],
         "chicken-dishes": [
             {
-                "item": "Lemon Herb Chicken",
-                "price": 14.95,
-                "description": "Chicken breasts seasoned with herbs and lemon."
+                "item": "Chicken Parmigiano",
+                "price": 18.95,
+                "description": "Breaded Chicken topped with Tomato Sauce and baked with Mozzarella."
+            },
+            {
+                "item": "Chicken Francese",
+                "price": 18.95,
+                "description": "Egg battered Chicken sautéed in Lemon, Wine & Butter Sauce"
             },
             {
                 "item": "Chicken Marsala",
-                "price": 15.50,
-                "description": "Chicken cooked in Marsala wine sauce with mushrooms."
+                "price": 18.95,
+                "description": "Breast of Chicken sautéed with Mushrooms in a Marsala Sauce."
             },
             {
-                "item": "Teriyaki Chicken",
-                "price": 13.95,
-                "description": "Chicken marinated in sweet teriyaki sauce."
+                "item": "Chicken Scarpariello",
+                "price": 18.95,
+                "description": "Chicken Breast sautéed with fresh Garlic, Potatoes & sweet Cherry Peppers in a White Wine Sauce."
+            },
+            {
+                "item": "Grilled chicken Broccoli Rabe",
+                "price": 20.95
+            },
+            {
+                "item": "Chicken Cacciatore",
+                "price": 18.95,
+                "description": "Breast of Chicken sautéed with Mushrooms, Peppers & Onions in a Marinara Sauce."
+            },
+            {
+                "item": "Chicken Sorrentino",
+                "price": 20.95,
+                "description": "Chicken Breast topped with Prosciutto & Eggplant sautéed in a White Wine and Tomato Sauce baked with Mozzarella."
+            },
+            {
+                "item": "Chicken Piccata",
+                "price": 18.95,
+                "description": "Chicken Breast sautéed with Capers in a Butter, Lemon, and White Wine Sauce."
             }
         ],
         "sausage": [
             {
-                "item": "Italian Sausage with Peppers and Onions",
-                "price": 11.95,
-                "description": "Italian sausage cooked with peppers and onions."
+                "item": "Sausage & Peppers",
+                "price": 17.95,
+                "description": "Sweet Italian Sausage sautéed with Bell Peppers in a Tomato Sauce."
             },
             {
-                "item": "Sausage and Broccoli Rabe",
-                "price": 12.50,
-                "description": "Italian sausage served with sautéed broccoli rabe."
+                "item": "Sausage Parmigiano",
+                "price": 17.95,
+                "description": "Sweet Italian Sausage with Tomato Sauce baked with Mozzarella."
             },
             {
-                "item": "Sausage and Mushroom Risotto",
-                "price": 13.95,
-                "description": "Creamy risotto with Italian sausage and mushrooms."
+                "item": "Sausage & Broccoli Rabe",
+                "price": 20.95,
+                "description": "Sweet Italian Sausage & Broccoli Rabe sautéed in fresh Garlic and Olive Oil."
             }
         ]
     }

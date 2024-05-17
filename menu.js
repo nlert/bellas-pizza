@@ -99,7 +99,7 @@ function underlineNavLinks() {
 	const navLinks = document.querySelectorAll('.menu-nav-link');
 
 	window.addEventListener('scroll', () => {
-		const scrollPosition = window.scrollY + 125;
+		const scrollPosition = window.scrollY + 130;
 
 		categories.forEach((category) => {
 			const categoryTop = category.offsetTop;
