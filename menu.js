@@ -6,17 +6,42 @@ fetch('menu.json')
 		for (const category in data.menu) {
 			if (data.menu.hasOwnProperty(category)) {
 				const parentElement = document.createElement('div');
-                parentElement.id = category;
+				parentElement.id = category;
 
-                parentElement.classList.add('menu-category');
-                parentElement.classList.add('fade-in');
+				parentElement.classList.add('menu-category');
+				parentElement.classList.add('fade-in');
 
-                const heading = document.createElement('h2');
-                heading.textContent = category.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+				const heading = document.createElement('h2');
+				heading.textContent = category
+					.split('-')
+					.map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+					.join(' ');
 
-                parentElement.appendChild(heading)
+				parentElement.appendChild(heading);
 
 				data.menu[category].forEach((menuItem) => {
+					if (menuItem.item === "Toppings") {
+						const toppingsContainer = document.createElement('div');
+						toppingsContainer.classList.add('toppings-container');
+
+						const toppingsTitle = document.createElement('p');
+						toppingsTitle.classList.add('food-item');
+						toppingsTitle.textContent = menuItem.item + " ";
+						toppingsContainer.appendChild(toppingsTitle);
+
+						const toppingsPrice = document.createElement('span');
+						toppingsPrice.textContent = menuItem.price;
+						toppingsPrice.classList.add('small-red');
+						toppingsTitle.appendChild(toppingsPrice);
+
+						const toppingsList = displayToppingsList(menuItem.toppings);
+						toppingsContainer.appendChild(toppingsList);
+
+						parentElement.appendChild(toppingsContainer);
+
+						return;
+					}
+
 					const foodRow = document.createElement('div');
 					foodRow.classList.add('food-row');
 
@@ -51,23 +76,23 @@ fetch('menu.json')
 					}
 
 					parentElement.appendChild(foodRow);
-                    menuElement.appendChild(parentElement);
 				});
+				menuElement.appendChild(parentElement);
 			}
 		}
 	})
-    .then(() => {
-        setTimeout(() => {
-            fadeIn();
-			underlineNavLinks()
-        }, 50);
-    })
+	.then(() => {
+		setTimeout(() => {
+			fadeIn();
+			underlineNavLinks();
+		}, 50);
+	});
 
 function fadeIn() {
-    document.querySelectorAll('.fade-in').forEach(element => {
-        element.classList.add("show");
-    })
-} 
+	document.querySelectorAll('.fade-in').forEach((element) => {
+		element.classList.add('show');
+	});
+}
 
 function underlineNavLinks() {
 	const categories = document.querySelectorAll('.menu-category');
@@ -76,14 +101,29 @@ function underlineNavLinks() {
 	window.addEventListener('scroll', () => {
 		const scrollPosition = window.scrollY + 125;
 
-		categories.forEach(category => {
+		categories.forEach((category) => {
 			const categoryTop = category.offsetTop;
 			const categoryBottom = categoryTop + category.clientHeight;
 
 			if (categoryTop < scrollPosition && categoryBottom > scrollPosition) {
-				navLinks.forEach(link => link.classList.remove('active'));
+				navLinks.forEach((link) => link.classList.remove('active'));
 				document.getElementById(`nav-${category.id}`).classList.add('active');
 			}
-		})
-	})
+		});
+	});
+}
+
+function displayToppingsList(toppings) {
+	const toppingsList = document.createElement('div');
+	toppingsList.classList.add('toppings-list');
+
+	toppings.forEach((topping) => {
+		const toppingItem = document.createElement('span');
+		toppingItem.classList.add('topping-item');
+		toppingItem.textContent = topping;
+
+		toppingsList.appendChild(toppingItem);
+	});
+
+	return toppingsList;
 }

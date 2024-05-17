@@ -2,6 +2,35 @@
     "menu": {
         "gourmet-pizza": [
             {
+                "item": "Medium - 14\"",
+                "price": 14.95
+            },
+            {
+                "item": "Large - 16\"",
+                "price": 15.95
+            },
+            {
+                "item": "Toppings",
+                "price": "+$3.00",
+                "toppings": [
+                    "Extra Cheese",
+                    "Eggplant",
+                    "Peppers",
+                    "Meatballs",
+                    "Anchovies",
+                    "Mushrooms",
+                    "Pepperoni",
+                    "Black Olives",
+                    "Broccoli",
+                    "Sun Dried Tomato",
+                    "Bacon",
+                    "Fresh Tomatoes",
+                    "Sausage",
+                    "Ricotta",
+                    "Pineapple"
+                  ] 
+            },
+            {
                 "item": "Regular Slice",
                 "price": 2.50
             },

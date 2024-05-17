@@ -158,8 +158,26 @@
         grid-column: 1 / 4 !important;
     }
 
-    .food-row p {
+    .food-row p, .food-item {
         font-size: 14px !important;
+    }
+
+    .small-red {
+        font-size: 12px;
+    }
+
+    .topping-item {
+        font-size: 12px !important;
+    }
+
+    .toppings-container {
+        flex-direction: column;
+    }
+
+    .toppings-list {
+        grid-template-columns: repeat(4, max-content);
+        column-gap: 25px;
+        width: max-content;
     }
 
     /* Menu Navbar */
@@ -237,5 +255,11 @@
     .nav-bar {
         border-right: none !important;
         width: 100vw !important;
+    }
+
+    .toppings-list {
+        grid-template-columns: repeat(2, max-content);
+        column-gap: 25px;
+        width: max-content;
     }
 }

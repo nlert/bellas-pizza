@@ -156,3 +156,23 @@ html {
 	color: #474747;
 	font-weight: 300;
 }
+
+/* Toppings */
+.toppings-container {
+	display: flex;
+	gap: 15px;
+}
+
+.toppings-list {
+	border: 1px solid #B9C1CB;
+	border-radius: 15px;
+	padding: 15px;
+
+	display: grid;
+	grid-template-columns: repeat(3, max-content);
+	column-gap: 50px;
+}
+
+.topping-item {
+	font-size: 16px;
+}
