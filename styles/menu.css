@@ -47,12 +47,23 @@ html {
   	-ms-overflow-style: none;
 }
 
+.nav-bar::-webkit-scrollbar {
+	display: none;
+  }
+
 .nav-bar::before {
 	content: '';
 	position: absolute;
 	width: 3px;
-	height: 552px;
 	background-color: var(--red);
+}
+
+.nav-bar-menu::before {
+	height: 552px;
+}
+
+.nav-bar-catering::before {
+	height: 244px;
 }
 
 .menu-nav-link {
