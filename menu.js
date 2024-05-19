@@ -19,68 +19,36 @@ fetch('menu.json')
 
 				parentElement.appendChild(heading);
 
-				if (category === "specialty-pizza") {
+				if (category === 'specialty-pizza') {
 					const fakeRow = document.createElement('div');
-                    fakeRow.classList.add('food-row');
-                    fakeRow.classList.add('fake-row');
+					fakeRow.classList.add('food-row');
+					fakeRow.classList.add('fake-row');
 
-                    const fakeItem = document.createElement('div');
+					const fakeItem = document.createElement('div');
 					fakeRow.appendChild(fakeItem);
 
-                    const fakeDivider = document.createElement('div');
+					const fakeDivider = document.createElement('div');
 					fakeRow.appendChild(fakeDivider);
 
-                    const largeMed = document.createElement('div');
+					const largeMed = document.createElement('div');
 					largeMed.classList.add('price-wrapper-specialty');
 
-                    const largeTitle = document.createElement('p');
-                    largeTitle.textContent = 'Large';
-                    largeTitle.classList.add('small-text');
-                    largeMed.appendChild(largeTitle);
+					const largeTitle = document.createElement('p');
+					largeTitle.textContent = 'Large';
+					largeTitle.classList.add('small-text');
+					largeMed.appendChild(largeTitle);
 
-                    const medTitle = document.createElement('p');
-                    medTitle.textContent = 'Med';
-                    medTitle.classList.add('small-text');
-                    largeMed.appendChild(medTitle);
+					const medTitle = document.createElement('p');
+					medTitle.textContent = 'Med';
+					medTitle.classList.add('small-text');
+					largeMed.appendChild(medTitle);
 
-                    fakeRow.appendChild(largeMed);
+					fakeRow.appendChild(largeMed);
 
-                    parentElement.appendChild(fakeRow);
+					parentElement.appendChild(fakeRow);
 				}
 
 				data.menu[category].forEach((menuItem) => {
-					if (menuItem.item === "Toppings") {
-						const toppingsContainer = document.createElement('div');
-						toppingsContainer.classList.add('toppings-container');
-
-						if (category !== "pasta") { 
-							const toppingsTitle = document.createElement('p');
-							toppingsTitle.classList.add('food-item');
-							toppingsTitle.textContent = menuItem.item + " ";
-							toppingsContainer.appendChild(toppingsTitle);
-
-							const toppingsPrice = document.createElement('span');
-							toppingsPrice.textContent = menuItem.price;
-							toppingsPrice.classList.add('small-red');
-							toppingsTitle.appendChild(toppingsPrice);
-						}
-						const toppingsList = displayToppingsList(menuItem.toppings);
-						toppingsContainer.appendChild(toppingsList);
-
-						parentElement.appendChild(toppingsContainer);
-
-						return;
-					} else if (menuItem.item === "served-with") {
-						const servedWith = document.createElement('span');
-						servedWith.classList.add('small-red');
-						servedWith.classList.add('served-with');
-						servedWith.textContent = menuItem.text;
-
-						parentElement.appendChild(servedWith);
-
-						return;
-					}
-
 					const foodRow = document.createElement('div');
 					foodRow.classList.add('food-row');
 
@@ -97,15 +65,15 @@ fetch('menu.json')
 
 					if (category === 'specialty-pizza') {
 						itemPrice = document.createElement('div');
-                        itemPrice.classList.add('price-wrapper-specialty');
+						itemPrice.classList.add('price-wrapper-specialty');
 
-                        const largePrice = document.createElement('p');
-                        largePrice.textContent = `$${menuItem["priceLg"].toFixed(2)}`;
-                        itemPrice.appendChild(largePrice);
+						const largePrice = document.createElement('p');
+						largePrice.textContent = `$${menuItem['priceLg'].toFixed(2)}`;
+						itemPrice.appendChild(largePrice);
 
-                        const medPrice = document.createElement('p');
-                        medPrice.textContent = `$${menuItem["priceMed"].toFixed(2)}`;
-                        itemPrice.appendChild(medPrice);
+						const medPrice = document.createElement('p');
+						medPrice.textContent = `$${menuItem['priceMed'].toFixed(2)}`;
+						itemPrice.appendChild(medPrice);
 					} else {
 						itemPrice.textContent = '$' + menuItem.price.toFixed(2);
 					}
@@ -124,6 +92,14 @@ fetch('menu.json')
 
 					parentElement.appendChild(foodRow);
 				});
+				if (category === 'gourmet-pizza') {
+					parentElement.insertBefore(displayToppings(), parentElement.children[4]);
+				}
+
+				if (category === 'pasta') {
+					parentElement.insertBefore(displayPasta(), parentElement.firstChild);
+				}
+
 				menuElement.appendChild(parentElement);
 			}
 		}
@@ -160,11 +136,45 @@ function underlineNavLinks() {
 	});
 }
 
-function displayToppingsList(toppings) {
+function displayToppings() {
+	const toppings = {
+		price: '+$3.00',
+		items: [
+			'Extra Cheese',
+			'Eggplant',
+			'Peppers',
+			'Meatballs',
+			'Anchovies',
+			'Mushrooms',
+			'Pepperoni',
+			'Black Olives',
+			'Broccoli',
+			'Sun Dried Tomato',
+			'Bacon',
+			'Fresh Tomatoes',
+			'Sausage',
+			'Ricotta',
+			'Pineapple',
+		],
+	};
+
+	const toppingsContainer = document.createElement('div');
+	toppingsContainer.classList.add('toppings-container');
+
+	const toppingsTitle = document.createElement('p');
+	toppingsTitle.classList.add('food-item');
+	toppingsTitle.textContent = 'Toppings';
+	toppingsContainer.appendChild(toppingsTitle);
+
+	const toppingsPrice = document.createElement('span');
+	toppingsPrice.textContent = toppings.price;
+	toppingsPrice.classList.add('small-red');
+	toppingsTitle.appendChild(toppingsPrice);
+
 	const toppingsList = document.createElement('div');
 	toppingsList.classList.add('toppings-list');
 
-	toppings.forEach((topping) => {
+	toppings.items.forEach((topping) => {
 		const toppingItem = document.createElement('span');
 		toppingItem.classList.add('topping-item');
 		toppingItem.textContent = topping;
@@ -172,5 +182,40 @@ function displayToppingsList(toppings) {
 		toppingsList.appendChild(toppingItem);
 	});
 
-	return toppingsList;
+	toppingsContainer.appendChild(toppingsList);
+
+	return toppingsContainer;
+}
+
+function displayPasta() {
+	const pastas = ['Spaghetti', 'Ziti', 'Penne', 'Rigatone', 'Cappelini', 'Linguini'];
+
+	const pastaContainer = document.createElement('div');
+	pastaContainer.classList.add('toppings-container');
+
+	const pastaList = document.createElement('div');
+	pastaList.classList.add('toppings-list');
+
+	pastas.forEach((pasta) => {
+		const pastaItem = document.createElement('span');
+		pastaItem.classList.add('topping-item');
+		pastaItem.textContent = topping;
+
+		pastaList.appendChild(pastaItem);
+	});
+
+	pastaContainer.appendChild(pastaList);
+
+	return pastaContainer;
+}
+
+if (menuItem.item === 'served-with') {
+	const servedWith = document.createElement('span');
+	servedWith.classList.add('small-red');
+	servedWith.classList.add('served-with');
+	servedWith.textContent = menuItem.text;
+
+	parentElement.appendChild(servedWith);
+
+	return;
 }
