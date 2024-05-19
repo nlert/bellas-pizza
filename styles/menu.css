@@ -29,22 +29,41 @@ html {
 .nav-bar {
 	position: fixed;
 	right: calc(450px + 50vw);
+	top: 0;
 
 	width: max-content;
 	padding-right: 50px;
-	z-index: 9999;
+	padding-top: 125px;
+	padding-bottom: 30px;
+	z-index: 9998;
 
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
+	height: 100vh;
+
+	overflow-y: scroll;
+  	scrollbar-width: none;
+  	-ms-overflow-style: none;
 }
+
+.nav-bar::-webkit-scrollbar {
+	display: none;
+  }
 
 .nav-bar::before {
 	content: '';
 	position: absolute;
 	width: 3px;
-	height: 100%;
 	background-color: var(--red);
+}
+
+.nav-bar-menu::before {
+	height: 552px;
+}
+
+.nav-bar-catering::before {
+	height: 244px;
 }
 
 .menu-nav-link {

@@ -94,7 +94,7 @@
 		"salads": [
 			{
 				"item": "served-with",
-				"text": "All salads are served with bread"
+				"text": "Served with bread"
 			},
 			{
 				"item": "Garden Salad",
@@ -158,7 +158,7 @@
                     "Spaghetti", 
                     "Ziti", 
                     "Penne", 
-                    "Rigatone", 
+                    "Rigatoni", 
                     "Cappelini", 
                     "Linguini"
                 ]
@@ -280,7 +280,7 @@
 				"price": 9.95
 			},
 			{
-				"item": "Mozarella Sticks",
+				"item": "Mozzarella Sticks",
 				"price": 7.95,
 				"description": "Comes with 6 sticks."
 			},
@@ -308,7 +308,7 @@
 				"price": 7.95
 			},
 			{
-				"item": "Sauteed Vegatables",
+				"item": "Sautéed Vegatables",
 				"price": 8.95
 			},
 			{
@@ -447,7 +447,7 @@
 			{
 				"item": "Grilled Chicken",
 				"price": 10.95,
-				"description": "With Lettuce, Tomato, Oil & Vinegar"
+				"description": "With Lettuce, Tomato, Oil & Vinegar."
 			},
 			{
 				"item": "Chicken Francese",
@@ -472,7 +472,7 @@
 			{
 				"item": "Philly Cheese Steak",
 				"price": 10.95,
-				"description": "With Onions & Peppers"
+				"description": "With Onions & Peppers."
 			},
 			{
 				"item": "Shrimp Parmigiano",
@@ -491,7 +491,7 @@
 			{
 				"item": "Calamari Marinara over Linguini",
 				"price": 19.95,
-				"description": "Calamari sautéed in a light Marinara Sauce"
+				"description": "Calamari sautéed in a light Marinara Sauce."
 			},
 			{
 				"item": "Shrimp & Calamari Fra Diavolo",
