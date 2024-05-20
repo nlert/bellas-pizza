@@ -268,14 +268,3 @@ function displayServedWith(category) {
 
 	return;
 }
-
-// if (menuItem.item === 'served-with') {
-// 	const servedWith = document.createElement('span');
-// 	servedWith.classList.add('small-red');
-// 	servedWith.classList.add('served-with');
-// 	servedWith.textContent = menuItem.text;
-
-// 	parentElement.appendChild(servedWith);
-
-// 	return;
-// }
