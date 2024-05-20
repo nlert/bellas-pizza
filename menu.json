@@ -72,10 +72,6 @@
 		],
 		"salads": [
 			{
-				"item": "served-with",
-				"text": "Served with bread"
-			},
-			{
 				"item": "Garden Salad",
 				"price": 7.5,
 				"description": "Tomato, Lettuce, Olives, Marinated Mushrooms, sweet Red Peppers & Croutons."
@@ -126,10 +122,6 @@
 			}
 		],
 		"pasta": [
-			{
-				"item": "served-with",
-				"text": "Served with salad or soup and bread"
-			},
 			{
 				"item": "Ravioli",
 				"price": 15.95
@@ -371,10 +363,6 @@
 		],
 		"vegetarian-dishes": [
 			{
-				"item": "served-with",
-				"text": "Served with pasta or salad"
-			},
-			{
 				"item": "Eggplant Parmigiano",
 				"price": 15.95,
 				"description": "Breaded Eggplant topped with Tomato Sauce, Mozzarella then Baked with Mozzarella."
@@ -452,10 +440,6 @@
 		],
 		"seafood": [
 			{
-				"item": "served-with",
-				"text": "Served with bread and salad"
-			},
-			{
 				"item": "Calamari Marinara over Linguini",
 				"price": 19.95,
 				"description": "Calamari sautéed in a light Marinara Sauce."
@@ -497,10 +481,6 @@
 			}
 		],
 		"chicken-dishes": [
-			{
-				"item": "served-with",
-				"text": "Served with pasta or salad"
-			},
 			{
 				"item": "Chicken Parmigiano",
 				"price": 18.95,

@@ -97,7 +97,12 @@ fetch('menu.json')
 				}
 
 				if (category === 'pasta') {
-					parentElement.insertBefore(displayPasta(), parentElement.firstChild);
+					parentElement.insertBefore(displayPasta(), parentElement.children[1]);
+				}
+
+				const servedWith = displayServedWith(category);
+				if (servedWith) {
+					parentElement.insertBefore(servedWith, parentElement.children[1]);
 				}
 
 				menuElement.appendChild(parentElement);
@@ -167,7 +172,7 @@ function displayToppings() {
 	toppingsContainer.appendChild(toppingsTitle);
 
 	const toppingsPrice = document.createElement('span');
-	toppingsPrice.textContent = toppings.price;
+	toppingsPrice.textContent = " " + toppings.price;
 	toppingsPrice.classList.add('small-red');
 	toppingsTitle.appendChild(toppingsPrice);
 
@@ -199,7 +204,7 @@ function displayPasta() {
 	pastas.forEach((pasta) => {
 		const pastaItem = document.createElement('span');
 		pastaItem.classList.add('topping-item');
-		pastaItem.textContent = topping;
+		pastaItem.textContent = pasta;
 
 		pastaList.appendChild(pastaItem);
 	});
@@ -209,13 +214,68 @@ function displayPasta() {
 	return pastaContainer;
 }
 
-if (menuItem.item === 'served-with') {
-	const servedWith = document.createElement('span');
-	servedWith.classList.add('small-red');
-	servedWith.classList.add('served-with');
-	servedWith.textContent = menuItem.text;
+function displayServedWith(category) {
+	const servedWith = {
+		"gourmet-pizza": {
+			"served-with": ""
+		},
+		"specialty-pizza": {
+			"served-with": ""
+		},
+		"salads": {
+			"served-with": "Served with bread"
+		},
+		"pasta": {
+			"served-with": "Served with salad or soup and bread"
+		},
+		"soups": {
+			"served-with": ""
+		},
+		"appetizers": {
+			"served-with": ""
+		},
+		"sandwiches": {
+			"served-with": ""
+		},
+		"rolls": {
+			"served-with": ""
+		},
+		"vegetarian-dishes": {
+			"served-with": "Served with pasta or salad"
+		},
+		"heroes": {
+			"served-with": ""
+		},
+		"seafood": {
+			"served-with": "Served with bread and salad"
+		},
+		"chicken-dishes": {
+			"served-with": "Served with pasta or salad"
+		},
+		"sausage": {
+			"served-with": ""
+		}
+	}
 
-	parentElement.appendChild(servedWith);
+	if (servedWith[category]["served-with"]) {
+		const servedWithElement = document.createElement('span');
+		servedWithElement.classList.add('small-red');
+		servedWithElement.classList.add('served-with');
+		servedWithElement.textContent = servedWith[category]["served-with"];
+
+		return servedWithElement;
+	}
 
 	return;
 }
+
+// if (menuItem.item === 'served-with') {
+// 	const servedWith = document.createElement('span');
+// 	servedWith.classList.add('small-red');
+// 	servedWith.classList.add('served-with');
+// 	servedWith.textContent = menuItem.text;
+
+// 	parentElement.appendChild(servedWith);
+
+// 	return;
+// }
