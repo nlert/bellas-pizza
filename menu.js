@@ -193,7 +193,7 @@ function displayToppings() {
 }
 
 function displayPasta() {
-	const pastas = ['Spaghetti', 'Ziti', 'Penne', 'Rigatone', 'Cappelini', 'Linguini'];
+	const pastas = ['Spaghetti', 'Ziti', 'Penne', 'Rigatoni', 'Cappelini', 'Linguini'];
 
 	const pastaContainer = document.createElement('div');
 	pastaContainer.classList.add('toppings-container');
