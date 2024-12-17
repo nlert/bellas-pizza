@@ -3,228 +3,211 @@
 		"appetizers-/-side-dishes": [
 			{
 				"item": "Italian Bites",
-				"price": 30.0,
+				"price": 50.0,
 				"pieces": 30
 			},
 			{
 				"item": "Buffalo Wings",
-				"price": 40.0,
+				"price": 50.0,
 				"pieces": 35
 			},
 			{
 				"item": "Mozzarella Sticks",
-				"price": 35.0,
-				"pieces": 30
-			},
-			{
-				"item": "Chicken Fingers",
-				"price": 30.0,
-				"pieces": 30
-			},
-			{
-				"item": "Stuffed Prosciutto Peppers",
 				"price": 45.0,
 				"pieces": 30
 			},
 			{
-				"item": "Bocconcini with Roasted Peppers",
-				"price": 40.0,
+				"item": "Chicken Fingers",
+				"price": 45.0,
 				"pieces": 30
 			}
 		],
 		"meatless-dishes": [
+            {
+				"item": "Fried Calamari",
+				"price-whole": 90.0,
+				"price-half": 50.0
+			},
 			{
 				"item": "Eggplant Parmigiano",
-				"price-whole": 60.0,
-				"price-half": 35.0
+				"price-whole": 80.0,
+				"price-half": 45.0
 			},
 			{
 				"item": "Cavatelli with Broccoli",
-				"price-whole": 65.0,
-				"price-half": 35.0
+				"price-whole": 85.0,
+				"price-half": 45.0
 			},
 			{
 				"item": "Fresh Mozzarella with Roasted Peppers",
-				"price-whole": 70.0,
-				"price-half": 40.0
+				"price-whole": 75.0,
+				"price-half": 45.0
 			},
 			{
-				"item": "Eggplant Rolantine",
-				"price-whole": 70.0,
-				"price-half": 40.0
+				"item": "Eggplant Rollantine",
+				"price-whole": 90.0,
+				"price-half": 45.0
 			},
 			{
 				"item": "Grilled Vegetables",
-				"price-whole": 70.0,
-				"price-half": 35.0
+				"price-whole": 90.0,
+				"price-half": 45.0
 			}
 		],
 		"antipasto-platters": [
 			{
 				"item": "Italian",
-				"price-sm": 40.00,
-                "price-md": 60.00,
-                "price-lg": 85.00,
+				"price-sm": 45.00,
+                "price-md": 65.00,
+                "price-lg": 90.00,
                 "description": "Includes Prosciutto, DiParma, Genoa DiLuso, Salami, imported Capicola (Hot or Sweet), Sopressata (Hot or Sweet), Mortadella, Sharp Provalone, Roasted Peppers, and Olive Salad."
 			},
             {
 				"item": "Classic",
-				"price-sm": 40.00,
-                "price-md": 55.00,
-                "price-lg": 80.00,
+				"price-sm": 45.00,
+                "price-md": 65.00,
+                "price-lg": 90.00,
                 "description": "Includes Boar's Head Boiled Ham, Roasted Turkey Breast, Genoa Salami, Imported Swiss Cheese, Provalone, Roasted Peppers, and Assorted Olives."
 			},
             {
 				"item": "Veggie Delight",
-				"price-sm": 40.00,
-                "price-md": 55.00,
-                "price-lg": 80.00,
+				"price-sm": 55.00,
+                "price-md": 70.00,
+                "price-lg": 95.00,
                 "description": "Includes Fresh Mozzarella, Roasted Peppers, Marinated Artichoke Hearts, Sundried Tomatoes, Olive Salad, Stuffed Peppers (Breadcrumbs, Parmigiano, Anchovy Paste)."
 			}
 		],
 		"pasta-trays": [
 			{
                 "item": "Meat Lasagna",
+                "price-whole": 100.00,
+                "price-half": 55.00
+            },
+            {
+                "item": "Cheese Lasagna",
+                "price-whole": 90.00,
+                "price-half": 50.00
+            },
+            {
+                "item": "Baked Ziti",
+                "price-whole": 90.00,
+                "price-half": 50.00
+            },
+            {
+                "item": "Baked Ziti with Marinara Sauce",
+                "price-whole": 80.00,
+                "price-half": 45.00
+            },
+            {
+                "item": "Penne with Vodka Sauce",
                 "price-whole": 85.00,
                 "price-half": 45.00
             },
             {
-                "item": "Cheese Lasagna",
-                "price-whole": 65.00,
-                "price-half": 40.00
-            },
-            {
-                "item": "Baked Ziti",
-                "price-whole": 60.00,
-                "price-half": 30.00
-            },
-            {
-                "item": "Baked Ziti with Meat Sauce",
-                "price-whole": 75.00,
-                "price-half": 30.00
-            },
-            {
-                "item": "Rigatoni with Marinara Sauce",
-                "price-whole": 65.00,
-                "price-half": 35.00
-            },
-            {
-                "item": "Penne with Vodka Sauce",
-                "price-whole": 65.00,
-                "price-half": 35.00
-            },
-            {
-                "item": "Meat Tortellini with Marinara Sauce",
-                "price-whole": 60.00,
-                "price-half": 30.00
-            },
-            {
-                "item": "Meat Tortellini with Meat Sauce",
-                "price-whole": 70.00,
-                "price-half": 35.00
-            },
-            {
-                "item": "Cheese Tortellini with Marinara Sauce",
-                "price-whole": 60.00,
-                "price-half": 30.00
+                "item": "Tortellini with Marinara Sauce",
+                "price-whole": 80.00,
+                "price-half": 45.00
             },
             {
                 "item": "Cheese Tortellini with Meat Sauce",
-                "price-whole": 65.00,
-                "price-half": 35.00
+                "price-whole": 85.00,
+                "price-half": 45.00
             },
             {
                 "item": "Cheese Tortellini with Alfredo Sauce",
-                "price-whole": 65.00,
-                "price-half": 35.00
+                "price-whole": 85.00,
+                "price-half": 45.00
             },
             {
                 "item": "Cheese Ravioli with Marinara Sauce",
-                "price-whole": 65.00,
-                "price-half": 35.00
+                "price-whole": 85.00,
+                "price-half": 45.00
             },
             {
                 "item": "Cheese Ravioli with Vodka Sauce",
-                "price-whole": 65.00,
-                "price-half": 35.00
+                "price-whole": 85.00,
+                "price-half": 45.00
             },
             {
                 "item": "Spaghetti with Marinara Sauce",
-                "price-whole": 55.00,
-                "price-half": 35.00
+                "price-whole": 80.00,
+                "price-half": 45.00
             },
             {
                 "item": "Spaghetti with Meat Sauce",
-                "price-whole": 60.00,
-                "price-half": 30.00
+                "price-whole": 80.00,
+                "price-half": 45.00
             },
             {
                 "item": "Cavatelli with Broccoli",
-                "price-whole": 65.00,
-                "price-half": 35.00
-            },
-            {
-                "item": "Meat Tortellini With Cheese Sauce",
-                "price-whole": 75.00,
-                "price-half": 35.00
+                "price-whole": 90.00,
+                "price-half": 50.00
             }
 		],
 		"meat-trays": [
 			{
                 "item": "Chicken Parmigiano",
-                "price-whole": 70.00,
-                "price-half": 45.00
+                "price-whole": 95.00,
+                "price-half": 55.00
             },
             {
                 "item": "Chicken Marsala",
-                "price-whole": 75.00,
-                "price-half": 45.00
+                "price-whole": 95.00,
+                "price-half": 55.00
             },
             {
                 "item": "Chicken with Peppers and Onions",
-                "price-whole": 75.00,
-                "price-half": 45.00
+                "price-whole": 95.00,
+                "price-half": 55.00
             },
             {
                 "item": "Sausage with Peppers and Onions",
-                "price-whole": 70.00,
-                "price-half": 40.00
+                "price-whole": 90.00,
+                "price-half": 50.00
             },
             {
                 "item": "Meatballs in Marinara Sauce",
-                "price-whole": 70.00,
-                "price-half": 40.00
+                "price-whole": 90.00,
+                "price-half": 50.00
             },
             {
                 "item": "Meatballs with Peppers and Onions",
-                "price-whole": 70.00,
-                "price-half": 40.00
+                "price-whole": 90.00,
+                "price-half": 50.00
             }
 		],
 		"party-subs": [
 			{
                 "item": "Boar's Head Boiled Ham, Genoa DiLuso Salami, Provolone",
-                "price": 17.95
+                "price": 23.95
             },
             {
                 "item": "Boar's Head Roast Beef with choice of Cheese",
-                "price": 17.95
+                "price": 23.95
             },
             {
                 "item": "Boar's Head Roasted Turkey Breast with choice of Cheese",
-                "price": 17.95
+                "price": 23.95
             },
             {
                 "item": "Prosciutto, Fresh Mozzarella and Roasted Peppers",
-                "price": 19.95
+                "price": 24.95
             },
             {
-                "item": "Fresh Mozzarella, Roasted Peppers and Sundried Tomatoes",
-                "price": 18.95
+                "item": "Fresh Mozzarella, Roasted Peppers and Sun-Dried Tomatoes",
+                "price": 23.95
             },
             {
                 "item": "Italian Classic Combo",
                 "price": 17.95
+            },
+            {
+                "item": "Add Roasted Peppers",
+                "price": "2.50 extra"
+            },
+            {
+                "item": "Add Hot or Sweet Peppers",
+                "price": "2.50 extra"
             }
 		]
 	}
