@@ -278,52 +278,52 @@
 		"sandwiches": [
 			{
 				"item": "Marie Bella Donna's",
-				"price": 10.95,
+				"price": 12.95,
 				"description": "Grilled Chicken with Broccoli Rabe and Fresh Mozzarella on a hero with Balsamic Vinegar."
 			},
 			{
 				"item": "The All American",
-				"price": 10.95,
+				"price": 12.95,
 				"description": "Ham, Turkey, Roast Beef, American Cheese, lettuce, tomato, mayo & mustard."
 			},
 			{
 				"item": "Eggplant Supreme",
-				"price": 10.95,
+				"price": 12.95,
 				"description": "Eggplant fried in olive oil, with mozzarella, tomato, olive oil and basil."
 			},
 			{
 				"item": "The Godmother",
-				"price": 10.95,
+				"price": 12.95,
 				"description": "Sweet sopressata, eggplant, ham, provolone, roasted peppers, olive oil and vinegar."
 			},
 			{
 				"item": "John's Favorite",
-				"price": 10.95,
+				"price": 12.95,
 				"description": "Grilled Chicken, mozzarella, roasted peppers, lettuce, tomato, mayo, oil and vinegar."
 			},
 			{
 				"item": "Mouth of Fire",
-				"price": 10.95,
+				"price": 12.95,
 				"description": "Hot capicola, sopressata and hot peppers."
 			},
 			{
 				"item": "The Old English",
-				"price": 10.95,
+				"price": 12.95,
 				"description": "Roast beef, cheddar, romaine, tomato, and Italian dressing."
 			},
 			{
 				"item": "Tuscan Chicken Delight",
-				"price": 10.95,
+				"price": 12.95,
 				"description": "Chicken Breast, Arugula, sun-dried tomato, Italian dressing."
 			},
 			{
 				"item": "Philadelphia Chaser",
-				"price": 10.95,
+				"price": 12.95,
 				"description": "Roast Beef, melted provolone, romaine, tomato, oil & vinegar on a toasted hero."
 			},
 			{
 				"item": "Roller Coaster Hero",
-				"price": 10.95,
+				"price": 12.95,
 				"description": "Turkey, American cheese, peppers, onions, lettuce, tomato, cole slaw & Russian dressing."
 			}
 		],
